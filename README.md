@@ -1,20 +1,24 @@
-# Đồ Đồng Tiểu Phong — V0.5
+# Đồ Đồng Tiểu Phong — V0.7 (ảnh mẫu Đại Bái)
 
-Website tĩnh giới thiệu quà tặng bằng đồng, tối ưu cho thiết bị di động và triển khai miễn phí bằng GitHub Pages.
+Website DEMO không có backend, không có thanh toán và không dùng dữ liệu Check Deck.
 
-## Chạy và kiểm tra
+## Điểm mới
 
-Không cần cài dependency. Mở `index.html` bằng web server tĩnh hoặc chạy:
+- Thay 4 nhóm quà tặng bằng sản phẩm mẫu thực tế từ trang Làng Đồng Đại Bái / Mỹ Nghệ Việt.
+- Giữ cơ chế ảnh/video lớn, ảnh thu nhỏ, phóng lớn và xem trên điện thoại.
+- Ảnh liên kết trực tiếp tới website nguồn; có nguồn công khai và nhãn "Ảnh tham khảo".
+- Nếu nguồn chặn tải ảnh, giao diện chuyển sang hình SVG dự phòng.
+- Giữ `noindex,nofollow` vì đây là bản thử nghiệm.
 
-```bash
-node scripts/validate-site.mjs
-```
+**Chưa xác minh quyền sử dụng ảnh để kinh doanh. Không đưa ảnh này làm hình sản phẩm đang bán.**
+Thay ảnh do cửa hàng Tiểu Phong sở hữu hoặc được cho phép trước khi phát hành thực tế.
 
-Workflow `.github/workflows/pages.yml` kiểm tra HTML, JavaScript, link nội bộ và asset trên Pull Request. Khi thay đổi được gộp vào `main`, workflow tự bật GitHub Pages (nếu chưa bật) và triển khai website.
+## Xem thử
 
-## Phạm vi V0.5
+- Trang chủ: `index.html`
+- Trang sản phẩm: `san-pham.html?id=GT001` (GT001–GT004)
+- Nguồn ảnh: `PHOTO_REFERENCE_SOURCES.md`
 
-- Trang chủ với bốn nhóm quà tặng mẫu: doanh nghiệp, mừng thọ, tân gia và lưu niệm.
-- Trang chi tiết có thư viện ảnh/video, thumbnail, chuyển ảnh, phóng to, vuốt trên điện thoại và tùy chọn báo giá.
-- Ảnh tư liệu được ghi nguồn và giấy phép; nội dung mẫu không được mô tả là hàng đang bán.
-- Hoạt động hoàn toàn ở phía trình duyệt, không có backend hoặc thanh toán.
+## Phát hành miễn phí
+
+Chỉ cần tải toàn bộ các file ra thư mục gốc repo GitHub Pages hiện có. Không cần chỉnh sửa Check Deck.
