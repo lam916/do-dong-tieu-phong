@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f7f4" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="description" content="Xem ảnh và video quà tặng đồng Đại Bái, lựa chọn kích thước, số lượng, thông điệp khắc và tạo yêu cầu báo giá." />
+  <title>Xem quà tặng | Đồ Đồng Tiểu Phong</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTEiIGZpbGw9IiNhNzYyMzgiLz48cGF0aCBkPSJNMzIgOCA1MyAyMHYyNEwzMiA1NiAxMSA0NFYyMHoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y0ZGZjNCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTIwIDQyaDI0bC0zLThIMjN6bTctMThoMTBsMyAxMEgyNHpNMzIgMTd2NyIgc3Ryb2tlPSIjZjRkZmM0IiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIuNSIvPjwvc3ZnPg==" type="image/svg+xml" />
+  <style>
+:root {
+  --ink: #252623;
+  --muted: #787b76;
+  --line: #e6e6e2;
+  --paper: #ffffff;
+  --soft: #f7f7f4;
+  --soft2: #f0efeb;
+  --copper: #a16c4c;
+  --copper-dark: #78472c;
+  --dark: #262824;
+  --font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit}
+button{cursor:pointer;color:inherit}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+[hidden]{display:none!important}
+.wrap{width:min(100% - 96px,1352px);margin:0 auto}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #d4a67f;outline-offset:3px}
+.preview-notice{height:auto;min-height:33px;display:flex;align-items:center;justify-content:center;gap:8px;padding:6px 18px;background:#f4f1ea;color:#6e6458;text-align:center;font-size:11px;line-height:1.5;letter-spacing:.01em}
+.preview-dot{width:6px;height:6px;flex:0 0 6px;border-radius:50%;background:#bb9164}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(15px)}
+.header-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:inline-flex;align-items:center;gap:11px;white-space:nowrap}
+.brand-symbol{width:38px;height:38px;display:flex;align-items:center;justify-content:center;position:relative;border:1px solid #c2aa9c;border-radius:7px;color:#855737;letter-spacing:-.065em;font-weight:700;font-size:15px}
+.brand-symbol-dot{width:4px;height:4px;border-radius:50%;background:var(--copper);position:absolute;bottom:7px;right:7px}
+.brand-lines{display:flex;flex-direction:column;gap:4px}
+.brand-lines strong{font-weight:770;letter-spacing:.095em;font-size:14px}
+.brand-lines small{font-size:8px;letter-spacing:.27em;color:var(--muted);font-weight:700}
+.desktop-nav{display:flex;align-items:center;gap:38px;margin-left:auto;margin-right:24px}
+.desktop-nav a{font-size:13px;font-weight:600;color:#4e514e;white-space:nowrap;position:relative;transition:color .2s}
+.desktop-nav a:hover{color:var(--copper-dark)}
+.header-actions{display:flex;align-items:center;gap:14px}
+.icon-button{background:transparent;border:0;display:grid;place-items:center;flex:0 0 auto;width:36px;height:36px;padding:6px;border-radius:50%}
+.icon-button:hover{background:#f3f3ef}
+.icon-button svg{height:22px;width:22px}
+.quote-button{display:flex;align-items:center;gap:9px;background:var(--dark);border:1px solid var(--dark);border-radius:6px;color:#fff;height:42px;padding:0 15px;font-size:12px;font-weight:700;white-space:nowrap}
+.quote-button:hover,.btn-dark:hover{background:#474b44}
+.quote-button svg{height:18px;width:18px}
+.quote-count{background:#fff;border-radius:50%;display:grid;place-items:center;min-height:20px;min-width:20px;padding:0 4px;font-size:10px;color:var(--dark)}
+.mobile-menu-button{display:none}
+.mobile-nav{position:absolute;top:100%;left:0;right:0;z-index:22;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 15px 23px #1515110a;padding:10px 32px 20px}
+.mobile-nav:not([hidden]){display:flex;flex-direction:column}
+.mobile-nav a{display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:620}
+.mobile-nav span{color:var(--muted)}
+
+.hero{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;min-height:564px;background:#f5f5f1;overflow:hidden;border-radius:10px}
+.hero-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:57px 45px 50px 68px}
+.overline{font-size:10px;font-weight:770;letter-spacing:.18em;color:#8d5b3a;display:inline-flex;align-items:center;gap:9px}
+.overline-rule{display:block;background:var(--copper);width:17px;height:1px}
+.overline-muted{color:#906848}
+.hero h1{font-size:clamp(39px,4.15vw,68px);letter-spacing:-.055em;line-height:1.14;font-weight:640;margin:23px 0 22px}
+.hero h1 span{color:#9c795f}
+.hero-copy>p{font-size:15px;line-height:1.85;color:#70746d;max-width:490px;margin:0 0 30px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:30px;padding:13px 20px;border-radius:5px;border:1px solid transparent;font-size:12px;font-weight:700;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.btn span{font-size:18px;line-height:12px;font-weight:400}
+.btn-dark{background:var(--dark);color:#fff;border-color:var(--dark)}
+.btn-outline{border-color:#bbbdb5;background:transparent;color:var(--ink)}
+.btn-outline:hover{background:#f0f0ed}
+.btn-text{border-color:transparent;color:#4b4e48;background:transparent;padding-left:7px;gap:13px}
+.btn-text:hover{color:var(--copper)}
+.hero-quick{display:flex;align-items:center;gap:10px;color:#8a8b83;font-size:11px;font-weight:560;margin-top:55px;white-space:nowrap}
+.hero-quick-line{width:20px;height:1px;background:#b8b6b1;margin-right:3px}
+.hero-quick i{width:3px;height:3px;background:#aaa8a2;border-radius:50%;display:block}
+.hero-visual{position:relative;background:#ebe5db;display:grid;place-items:center;overflow:hidden}
+.hero-visual:before{position:absolute;content:"";inset:8% 12%;border:1px solid #dacfc0;border-radius:50%;opacity:.55;pointer-events:none}
+.hero-visual:after{position:absolute;content:"";width:82%;height:50%;background:radial-gradient(ellipse,rgba(143,101,65,.08),transparent 68%);top:34%;left:10%;pointer-events:none}
+.hero-visual>img{width:min(94%,625px);height:77%;max-height:480px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 25px 18px rgba(92,65,47,.13))}
+.hero-visual-tag{position:absolute;top:30px;left:32px;right:32px;z-index:2;display:flex;align-items:center;justify-content:space-between;font-size:10px;letter-spacing:.12em;color:#827462;font-weight:700}
+.hero-visual-caption{position:absolute;bottom:30px;left:32px;right:32px;z-index:2;display:flex;justify-content:space-between;gap:12px;align-items:end}
+.hero-visual-caption strong{font-size:13px;font-weight:700;letter-spacing:-.015em}
+.hero-visual-caption span{font-size:10px;color:#877d70;text-align:right}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:36px;margin-bottom:7px;border-bottom:1px solid var(--line)}
+.benefit{display:flex;align-items:center;gap:13px;padding:10px 26px 30px;border-right:1px solid var(--line)}
+.benefit:first-child{padding-left:0}.benefit:last-child{border-right:0}
+.benefit-icon{width:39px;height:39px;flex:0 0 39px;border:1px solid #deded7;border-radius:50%;display:grid;place-items:center;font-size:11px;letter-spacing:.03em;color:#9a6645}
+.benefit>div{display:flex;flex-direction:column;gap:6px}
+.benefit b{font-size:12px;font-weight:720}
+.benefit small{font-size:11px;color:var(--muted);line-height:1.4}
+
+.section{padding-top:99px;padding-bottom:96px}
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:34px}
+.section-heading h2,.story-content h2{font-size:clamp(27px,3vw,41px);font-weight:670;line-height:1.23;letter-spacing:-.045em;margin:14px 0 0}
+.section-heading h2 span,.story-content h2 span{color:#a38064}
+.section-heading>p{max-width:280px;color:var(--muted);font-size:13px;line-height:1.8;margin:0 3px 2px 0}
+.collection-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.collection-card{display:block;min-width:0;transition:transform .23s}
+.collection-card:hover{transform:translateY(-4px)}
+.collection-image{height:280px;display:grid;place-items:center;overflow:hidden;border-radius:7px;position:relative}
+.collection-image img{width:83%;height:88%;object-fit:contain;filter:drop-shadow(0 16px 10px #76645123);transition:transform .3s}
+.collection-card:hover .collection-image img{transform:scale(1.035)}
+.category-worship .collection-image{background:#f1ebe4}
+.category-picture .collection-image{background:#edeae6}
+.category-sculpture .collection-image{background:#f1eeeb}
+.category-gift .collection-image{background:#eeeae3}
+.collection-meta{padding:17px 0 0;display:flex;align-items:baseline;gap:9px}
+.collection-meta>span:first-child{font-size:10px;color:#a0a19a}
+.collection-meta strong{font-size:16px;letter-spacing:-.015em;font-weight:650}
+.collection-arrow{margin-left:auto;font-size:21px;color:#81827a;line-height:1}
+
+.products-section{background:var(--soft);padding-top:91px;padding-bottom:106px}
+.products-heading{margin-bottom:31px}
+.catalog-tools{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-bottom:17px;border-bottom:1px solid #dddfd7}
+.filters{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.filter{padding:11px 16px;border:1px solid transparent;background:transparent;border-radius:5px;font-size:12px;font-weight:620;color:#787a74;white-space:nowrap}
+.filter:hover{color:#333631;background:#efefeb}
+.filter.active{color:#fff;background:#333630}
+.search-box{min-width:220px;display:flex;align-items:center;gap:10px;padding:10px 14px;background:#fff;border:1px solid #e1e3dd;border-radius:5px}
+.search-box svg{width:17px;height:17px;color:#8f918a;flex:0 0 17px}
+.search-box input{width:100%;border:0;outline:none;font-size:12px;min-width:0;background:transparent;color:var(--ink)}
+.search-box:focus-within{outline:2px solid #c8bea9;outline-offset:0}
+.search-box input::placeholder{color:#a0a39c}
+.catalog-summary{font-size:12px;color:#868981;padding:18px 0 20px}
+.catalog-summary strong{font-size:13px;color:#313530}
+.catalog-summary span{color:#a0a29d}
+.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:44px 17px}
+.product-card{min-width:0}
+.product-image-wrap{position:relative;background:#eeebe5;border-radius:7px;overflow:hidden;aspect-ratio:1/1.06}
+.product-card:nth-child(4n+2) .product-image-wrap{background:#eeeae4}
+.product-card:nth-child(4n+3) .product-image-wrap{background:#f0eeea}
+.product-card:nth-child(4n+4) .product-image-wrap{background:#eae9e5}
+.product-visual{position:relative;width:100%;height:100%;padding:21px;background:none;border:0;display:grid;place-items:center;overflow:hidden}
+.product-visual img{width:100%;height:100%;max-height:265px;object-fit:contain;filter:drop-shadow(0 12px 9px #674f3520);transition:transform .3s}
+.product-visual:hover img{transform:scale(1.065)}
+.product-tag{position:absolute;top:13px;left:13px;z-index:1;background:rgba(255,255,255,.86);backdrop-filter:blur(8px);font-size:9px;letter-spacing:.035em;font-weight:660;padding:7px 10px;border-radius:4px;color:#5f655e}
+.product-add{position:absolute;bottom:12px;right:12px;width:36px;height:36px;border-radius:50%;background:#fff;border:1px solid #e6e6df;box-shadow:0 3px 9px #0000000e;font-size:24px;font-weight:350;line-height:1;display:grid;place-items:center;transition:background .2s,color .2s}
+.product-add:hover{background:#323831;color:#fff}
+.product-details{padding:15px 2px 0;display:flex;flex-direction:column;align-items:start}
+.product-details small{color:#979991;font-size:10px;font-weight:650;letter-spacing:.015em;margin-bottom:6px}
+.product-name{font-weight:660;font-size:15px;line-height:1.48;text-align:left;border:0;background:transparent;padding:0;letter-spacing:-.014em}
+.product-name:hover{color:#9c6745}
+.product-sub{font-size:11px;line-height:1.6;color:#999c95;margin-top:4px}
+.product-price{font-weight:730;color:#835d43;font-size:12px;margin-top:12px}
+.empty-state{background:#fff;border:1px dashed #d7d9d4;text-align:center;padding:55px 20px;margin-top:16px}
+.empty-state strong{display:block;font-size:18px}.empty-state p{color:var(--muted);font-size:12px;line-height:1.7;margin-bottom:22px}
+
+.shop-story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(45px,8vw,132px);align-items:center}
+.story-media{min-height:446px;display:grid;place-items:center;background:#f0ede8;position:relative;border-radius:8px;overflow:hidden}
+.story-media img{width:76%;height:390px;object-fit:contain;filter:drop-shadow(0 25px 17px #92705423)}
+.story-badge{position:absolute;bottom:22px;left:23px;border:1px solid #d1ccc2;background:#f9f8f4e8;border-radius:4px;padding:11px 15px;font-size:9px;font-weight:760;letter-spacing:.12em}
+.story-content{max-width:492px}
+.story-content h2{margin:16px 0 22px;font-size:clamp(31px,3.1vw,43px)}
+.story-content>p{font-size:13px;line-height:1.9;color:#838781;max-width:450px}
+.story-steps{margin-top:31px;border-top:1px solid var(--line);max-width:465px}
+.story-steps>div{display:flex;align-items:center;gap:19px;padding:14px 0;border-bottom:1px solid var(--line)}
+.story-steps span{color:#b0b2aa;font-size:11px}
+.story-steps b{font-size:12px;font-weight:640}
+.story-link{display:inline-flex;align-items:center;gap:18px;margin-top:30px;padding-bottom:8px;font-size:12px;font-weight:720;border-bottom:1px solid #8d8071}
+.story-link span{font-size:18px}
+
+.contact-section{min-height:385px;border-radius:9px;background:#ede9e2;position:relative;display:grid;grid-template-columns:1.3fr .7fr;overflow:hidden;margin-bottom:85px}
+.contact-content{padding:66px 24px 65px 69px;position:relative;z-index:2}
+.contact-content h2{font-size:clamp(31px,3.25vw,44px);letter-spacing:-.045em;line-height:1.24;font-weight:670;margin:17px 0 14px}
+.contact-content h2 span{color:#98785d}
+.contact-content>p{color:#777972;font-size:13px;line-height:1.8;max-width:530px}
+.contact-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:25px}
+.contact-links{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.contact-links a{font-size:12px;color:#6f513e;border-bottom:1px solid #aa8d79;padding-bottom:3px}
+.contact-content .contact-pending{font-size:11px;color:#9a968d;margin-top:19px}
+.contact-art{display:grid;place-items:center;overflow:hidden}
+.contact-art-disc{height:400px;width:400px;border:1px solid #d5c8b8;display:grid;place-items:center;border-radius:50%;transform:translate(100px,65px)}
+.contact-art-disc img{width:62%;height:62%;object-fit:contain;filter:drop-shadow(0 18px 15px #695b481c)}
+
+.site-footer{border-top:1px solid var(--line);background:#fff}
+.footer-main{display:flex;justify-content:space-between;gap:40px;padding-top:46px;padding-bottom:42px}
+.footer-logo{font-size:17px;font-weight:780;letter-spacing:.08em;display:inline-flex;gap:12px;align-items:center}
+.footer-logo span{color:#a57d63;font-size:18px}
+.footer-main p{margin:12px 0 0;font-size:12px;color:#95988f}
+.footer-main nav{display:flex;align-items:start;gap:26px;font-size:12px;color:#676b64;font-weight:570}
+.footer-main nav a:hover{color:var(--copper)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding:18px 0 20px;font-size:11px;color:#a1a29c}
+.mobile-bottom-bar{display:none}
+
+.drawer-backdrop{position:fixed;z-index:40;inset:0;background:rgba(20,25,22,.46);backdrop-filter:blur(3px)}
+.quote-drawer{position:fixed;z-index:41;inset:0 0 0 auto;width:min(455px,100%);display:flex;flex-direction:column;background:#fff;box-shadow:-15px 0 50px #0000001f}
+.drawer-header{display:flex;align-items:start;justify-content:space-between;gap:16px;padding:29px 27px 20px;border-bottom:1px solid var(--line)}
+.drawer-header h2{margin:8px 0 0;font-size:26px;letter-spacing:-.04em}
+.close-button{font-size:30px;color:#4d5149;line-height:1}
+.drawer-body{flex:1;overflow:auto;padding:17px 27px 24px}
+.drawer-help{color:#8d928b;font-size:12px;line-height:1.7;margin-bottom:24px}
+.drawer-help strong{color:#737a72}
+.quote-items{display:flex;flex-direction:column;gap:13px}
+.quote-item{display:flex;align-items:center;gap:13px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.quote-item img{width:66px;height:69px;object-fit:contain;background:#eeeae4;border-radius:5px}
+.quote-item>div{flex:1;min-width:0}
+.quote-item strong{display:block;font-size:13px;line-height:1.55}
+.quote-item span{font-size:11px;color:#91958e;line-height:1.5}
+.quote-remove{font-size:22px;border:0;background:#f3f4f0;width:30px;height:30px;border-radius:50%}
+.quote-remove:hover{background:#e7e8e2}
+.quote-empty{background:#f7f7f4;border-radius:5px;color:#888b83;padding:22px;font-size:12px;line-height:1.7}
+.quote-form{padding-top:22px;margin-top:24px;border-top:1px solid var(--line)}
+.quote-form h3{font-size:16px;margin:0 0 15px}
+.quote-form h3 small{font-weight:450;color:#979a93;font-size:11px}
+.quote-form label{display:block;margin:13px 0;font-size:12px;font-weight:610}
+.quote-form input,.quote-form textarea{display:block;width:100%;border:1px solid #e2e4df;border-radius:5px;padding:12px 13px;margin-top:8px;font-size:13px;resize:vertical;color:var(--ink);background:#fff}
+.quote-form input:focus,.quote-form textarea:focus{outline:1px solid #be9b7e;border-color:#be9b7e}
+.drawer-footer{padding:18px 27px 24px;border-top:1px solid var(--line);background:#fafaf8}
+.btn-full{width:100%}
+.drawer-footer .btn{margin-bottom:9px}
+.drawer-footer p{font-size:11px;color:#959890;line-height:1.65;margin:7px 0 0}
+.product-dialog{padding:0;border:0;border-radius:9px;background:#fff;box-shadow:0 25px 95px #0005;width:min(940px,calc(100vw - 32px));max-height:92vh;overflow:auto;color:var(--ink)}
+.product-dialog::backdrop{background:rgba(21,24,22,.66)}
+.detail-body{display:grid;grid-template-columns:1fr 1fr}
+.detail-image{display:grid;place-items:center;padding:32px;min-height:495px;background:#f1eeea}
+.detail-image img{width:100%;height:380px;object-fit:contain}
+.detail-info{padding:64px 45px 38px}
+.detail-info h2{font-size:32px;letter-spacing:-.04em;line-height:1.27;margin:13px 0 16px}
+.detail-info>p{font-size:13px;color:#868a81;line-height:1.85}
+.detail-info dl{margin:22px 0 19px;border-top:1px solid var(--line)}
+.detail-info dl div{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:12px}
+.detail-info dt{color:#91958d}.detail-info dd{font-weight:700;text-align:right;margin:0}
+.detail-info .detail-hint{font-size:11px;color:#a1a39d;line-height:1.6}
+.detail-close{position:absolute;top:10px;right:12px;z-index:3;font-size:30px;background:#fff}
+.toast{position:fixed;z-index:60;bottom:24px;left:50%;transform:translate(-50%,22px);opacity:0;pointer-events:none;background:#2c302a;color:#fff;border-radius:5px;box-shadow:0 12px 36px #0002;padding:13px 19px;max-width:calc(100vw - 30px);font-size:12px;text-align:center;transition:.2s ease}
+.toast.visible{opacity:1;transform:translate(-50%,0)}
+
+@media(max-width:1200px){
+  .wrap{width:min(100% - 72px,1352px)}
+  .desktop-nav{gap:23px;margin-right:2px}
+  .hero-copy{padding:46px 30px 42px 46px}
+  .hero h1{font-size:clamp(37px,4.25vw,58px)}
+  .collection-image{height:230px}
+  .catalog-tools{flex-direction:column;align-items:stretch}
+  .search-box{max-width:380px}
+}
+@media(max-width:920px){
+  .wrap{width:calc(100% - 52px)}
+  .desktop-nav,.search-jump{display:none}
+  .mobile-menu-button{display:grid}
+  .header-inner{height:72px}
+  .hero{grid-template-columns:1fr 1fr;min-height:515px}
+  .hero-copy{padding:45px 24px 35px 33px}
+  .hero h1{font-size:clamp(34px,4.8vw,48px)}
+  .hero-copy>p{font-size:13px}
+  .hero-quick{margin-top:33px;font-size:10px}
+  .hero-visual-caption span{display:none}
+  .benefit{padding-right:12px;padding-left:12px}
+  .benefit-icon{width:33px;height:33px;flex-basis:33px}
+  .benefit b{font-size:11px}
+  .benefit small{font-size:10px}
+  .collection-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .collection-image{height:270px}
+  .product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .shop-story{gap:35px}
+  .story-media{min-height:375px}
+  .story-media img{height:310px}
+  .contact-art-disc{transform:translate(150px,60px)}
+}
+@media(max-width:640px){
+  html{scroll-padding-top:75px}
+  body{padding-bottom:64px}
+  .wrap{width:calc(100% - 36px)}
+  .preview-notice{font-size:9px;line-height:1.5;padding:5px 14px}
+  .header-inner{height:64px;gap:7px}
+  .brand{gap:8px}
+  .brand-symbol{width:34px;height:34px;font-size:13px}
+  .brand-lines strong{font-size:12px;letter-spacing:.04em}
+  .brand-lines small{font-size:7px;letter-spacing:.14em}
+  .header-actions{gap:3px}
+  .quote-button{height:36px;gap:5px;padding:0 9px}
+  .quote-button svg{width:18px}
+  .quote-label{display:none}
+  .quote-count{min-height:17px;min-width:17px;font-size:9px}
+  .mobile-menu-button{width:33px;height:33px}
+  .hero{display:flex;flex-direction:column;margin-top:14px;border-radius:6px}
+  .hero-copy{padding:35px 26px 29px}
+  .overline{font-size:9px;letter-spacing:.125em}
+  .hero h1{font-size:clamp(34px,9vw,46px);line-height:1.16;margin:16px 0 14px}
+  .hero h1 span{font-size:.84em}
+  .hero-copy>p{font-size:12px;line-height:1.85;margin-bottom:23px}
+  .hero-actions{gap:4px}
+  .hero .btn{padding:12px 16px;font-size:11px;gap:13px}
+  .hero .btn-text{display:none}
+  .btn{min-height:45px}
+  .hero-quick{display:none}
+  .hero-visual{height:290px;margin:0}
+  .hero-visual-tag{left:20px;right:20px;top:19px;font-size:9px}
+  .hero-visual>img{height:79%;width:90%}
+  .hero-visual-caption{left:19px;right:19px;bottom:20px}
+  .hero-visual-caption strong{font-size:11px}
+  .benefits{grid-template-columns:1fr;gap:0;margin-top:20px}
+  .benefit{border-right:0;border-bottom:1px solid var(--line);padding:13px 0}
+  .benefit:last-child{border-bottom:0}
+  .benefit-icon{width:32px;height:32px;flex-basis:32px}
+  .benefit b{font-size:12px}
+  .benefit small{font-size:11px}
+  .section{padding-top:69px;padding-bottom:68px}
+  .section-heading{display:block;margin-bottom:25px}
+  .section-heading h2,.story-content h2{font-size:30px}
+  .section-heading>p{margin-top:12px;max-width:100%;font-size:12px}
+  .collection-grid{gap:12px}
+  .collection-image{height:auto;aspect-ratio:1/1.05}
+  .collection-image img{width:91%;height:91%}
+  .collection-meta{padding-top:12px;gap:6px}
+  .collection-meta strong{font-size:13px}
+  .collection-meta>span:first-child{font-size:9px}
+  .collection-arrow{font-size:16px}
+  .products-section{padding-top:68px;padding-bottom:74px}
+  .products-heading{margin-bottom:26px}
+  .catalog-tools{gap:17px;padding-bottom:16px}
+  .filters{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;margin-right:-18px;padding-right:18px}
+  .filters::-webkit-scrollbar{display:none}
+  .filter{font-size:11px;padding:10px 12px}
+  .search-box{min-height:42px;max-width:100%;width:100%}
+  .catalog-summary{font-size:11px;padding:16px 0 17px}
+  .catalog-summary span{display:none}
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:30px}
+  .product-visual{padding:9px}
+  .product-image-wrap{aspect-ratio:1/1.16}
+  .product-visual img{max-height:215px}
+  .product-tag{font-size:8px;top:8px;left:8px;padding:6px}
+  .product-add{width:31px;height:31px;bottom:8px;right:8px;font-size:21px}
+  .product-details{padding:11px 0 0}
+  .product-details small{font-size:9px;margin-bottom:5px}
+  .product-name{font-size:13px}
+  .product-sub{font-size:10px}
+  .product-price{font-size:11px;margin-top:9px}
+  .shop-story{grid-template-columns:1fr;gap:31px}
+  .story-media{min-height:295px}
+  .story-media img{height:270px}
+  .story-content h2{font-size:31px}
+  .story-content>p{font-size:12px}
+  .contact-section{grid-template-columns:1fr;min-height:auto;margin-bottom:50px}
+  .contact-content{padding:39px 26px 45px}
+  .contact-content h2{font-size:30px}
+  .contact-content>p{font-size:12px}
+  .contact-art{display:none}
+  .contact-actions{gap:13px}
+  .footer-main{padding-top:35px;padding-bottom:30px;flex-direction:column;gap:25px}
+  .footer-logo{font-size:15px}
+  .footer-main nav{gap:20px;flex-wrap:wrap}
+  .footer-main p{font-size:11px}
+  .footer-bottom{font-size:10px;gap:10px}
+  .mobile-bottom-bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:21;background:#fff;border-top:1px solid #e8e8e3;box-shadow:0 -4px 19px #14161410;padding:8px 12px calc(8px + env(safe-area-inset-bottom));gap:8px}
+  .mobile-bottom-bar a,.mobile-bottom-bar button{height:42px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:5px;font-size:12px;font-weight:710}
+  .mobile-bottom-bar a{background:#f3f4f0}
+  .mobile-bottom-bar button{border:0;background:#2f332d;color:#fff}
+  .mobile-bottom-bar b{background:#fff;color:#2f332d;border-radius:50%;font-size:10px;min-width:17px;height:17px;display:grid;place-items:center}
+  .product-dialog{max-height:90vh}
+  .detail-body{grid-template-columns:1fr}
+  .detail-image{min-height:255px;padding:20px}
+  .detail-image img{height:235px}
+  .detail-info{padding:26px 22px 28px}
+  .detail-info h2{font-size:26px}
+  .detail-info>p{font-size:12px}
+  .drawer-header{padding:22px 20px 18px}
+  .drawer-body{padding:14px 20px 22px}
+  .drawer-footer{padding:15px 20px 18px}
+  .quote-drawer{height:100dvh}
+  .toast{bottom:78px}
+}
+@media(max-width:355px){
+  .brand-lines strong{font-size:10px}
+  .brand-lines small{font-size:6px}
+  .hero-actions .btn-text{display:none}
+  .hero h1 span{font-size:.73em}
+  .collection-meta strong{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* V0.3 - Real photographs in preview: sources/attribution in footer. */
+.hero-visual>img.is-real-photo{width:100%;height:100%;max-height:none;object-fit:cover;filter:none}
+.hero-visual:has(>img.is-real-photo):before,.hero-visual:has(>img.is-real-photo):after{display:none}
+.hero-visual:has(>img.is-real-photo) .hero-visual-tag{color:#fff;text-shadow:0 1px 8px #000d}
+.hero-visual:has(>img.is-real-photo) .hero-visual-caption{background:linear-gradient(0deg,#0008,transparent);left:0;right:0;bottom:0;padding:34px 28px 21px;color:#fff}
+.hero-visual:has(>img.is-real-photo) .hero-visual-caption span{color:#f3e8dc}
+.collection-image img.is-real-photo{width:100%;height:100%;object-fit:cover;filter:none}
+.product-visual:has(img.is-real-photo){padding:0}
+.product-visual img.is-real-photo{width:100%;height:100%;max-height:none;object-fit:cover;filter:none}
+.quote-item img.is-real-photo{object-fit:cover}
+.detail-image img.is-real-photo{object-fit:contain;filter:none}
+.story-media img.is-real-photo{width:100%;height:100%;object-fit:cover;filter:none}
+.contact-art-disc img.is-real-photo{height:100%;width:100%;object-fit:cover;filter:none;border-radius:50%}
+.detail-credit{font-size:11px;color:#86674e}
+.detail-credit a{text-decoration:underline;text-underline-offset:3px}
+.photo-credit{font-size:11px;line-height:1.85;color:#85877f;padding:0 0 22px}
+.photo-credit strong{color:#555c51}
+.photo-credit a{text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){
+  .hero-visual>img.is-real-photo{width:100%;height:100%}
+  .collection-image img.is-real-photo{width:100%;height:100%}
+  .story-media img.is-real-photo{width:100%;height:100%}
+}
+
+</style>
+  <style>
+.skip-link{position:absolute;top:-60px;left:15px;z-index:99;background:#fff;padding:12px 20px}
+.skip-link:focus{top:10px}
+.detail-nav{display:flex;align-items:center;gap:27px;margin-left:auto}
+.detail-nav a{font-size:13px;font-weight:640;color:#4a4b45}
+.detail-nav a:hover,.detail-back:hover{color:var(--copper)}
+.detail-back{display:flex;align-items:center;gap:6px;color:#926a50;font-size:12px;font-weight:650;margin-left:22px}
+.detail-breadcrumb{display:flex;align-items:center;gap:10px;color:#91938a;font-size:12px;padding-top:27px;padding-bottom:24px;flex-wrap:wrap}
+.detail-breadcrumb a:hover{color:var(--copper-dark)}
+.product-layout{display:grid;grid-template-columns:minmax(0,1.73fr) minmax(310px,.95fr);gap:clamp(24px,4.25vw,74px);align-items:start;padding-bottom:95px}
+.media-column{min-width:0}
+.media-shell{display:grid;grid-template-columns:90px minmax(0,1fr);gap:13px;align-items:start}
+.media-thumbnails{display:flex;flex-direction:column;gap:11px;max-height:660px;overflow-y:auto;scrollbar-width:thin;padding:1px 3px 4px 1px}
+.media-thumb{width:79px;min-height:87px;aspect-ratio:1/1.1;border:2px solid transparent;border-radius:8px;padding:0;background:#f0eee9;overflow:hidden;position:relative;flex:0 0 auto;cursor:pointer}
+.media-thumb img{width:100%;height:100%;object-fit:contain;padding:7px;filter:drop-shadow(0 6px 6px #00000015)}
+.media-thumb.active{border-color:#965e3f;box-shadow:0 0 0 1px #fff inset}
+.media-thumb:hover:not(.active){border-color:#c7b39e}
+.media-video-marker{position:absolute;inset:auto 0 0 0;display:flex;justify-content:center;align-items:center;gap:4px;padding:5px;background:#282c29da;color:#fff;font-size:10px;font-weight:800}
+.media-viewer{background:#f0eee8;aspect-ratio:1/1.04;max-height:650px;min-height:400px;border-radius:9px;overflow:hidden;position:relative;isolation:isolate;outline-offset:5px}
+.media-stage,.media-stage img,.media-stage video{width:100%;height:100%}
+.media-stage{display:grid;place-items:center}
+.media-stage img{object-fit:contain;padding:36px;filter:drop-shadow(0 20px 17px rgba(79,58,30,.13))}
+.media-stage img.is-real-photo{object-fit:contain;padding:10px;filter:none}
+.media-stage video{object-fit:contain;background:#1f201f;display:block}
+.media-topline{position:absolute;top:16px;left:19px;right:19px;display:flex;justify-content:space-between;align-items:center;gap:5px;pointer-events:none;color:#62574f;font-size:10px;font-weight:700;letter-spacing:.025em}
+.media-topline span:first-child{background:#fffdf4d9;padding:8px 11px;border-radius:5px;backdrop-filter:blur(5px)}
+.media-topline span:last-child{background:#fffdf4cc;padding:7px 10px;border-radius:40px;font-variant-numeric:tabular-nums}
+.media-favorite{position:absolute;top:60px;right:16px;border:none;width:42px;height:42px;border-radius:50%;background:#fffdf4e8;font-size:27px;line-height:1;z-index:2}
+.media-favorite[aria-pressed="true"]{color:#b66754}
+.media-arrow{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:none;box-shadow:0 8px 25px #00000012;background:#fffefaed;font-size:36px;line-height:36px;z-index:2}
+.media-arrow:hover{background:#fff}
+.left-arrow{left:14px}.right-arrow{right:14px}
+.media-zoom{position:absolute;bottom:15px;right:15px;display:flex;gap:7px;align-items:center;border:1px solid #e1d8d0;background:#fffdf9f1;border-radius:6px;padding:9px 13px;font-size:12px;font-weight:680}
+.media-description{display:flex;justify-content:space-between;gap:15px;align-items:center;color:#929087;font-size:11px;margin:14px 0 21px;line-height:1.6}
+.media-description p{margin:0}.media-description a{color:#8a644d;text-decoration:underline}
+.try-media{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#f8f6f2;border:1px dashed #d8cec3;border-radius:8px;padding:20px 21px}
+.try-media strong{font-size:14px}
+.try-media p{margin:6px 0 0;color:#787a74;font-size:11px;line-height:1.7;max-width:420px}
+.try-media-button{cursor:pointer;flex:0 0 auto;font-size:11px;font-weight:720;padding:12px 13px;background:#fff;border:1px solid #d0c5b7;border-radius:5px}
+.try-media-button:hover{border-color:#976a4b}
+.media-instructions{display:flex;gap:19px;flex-wrap:wrap;margin-top:15px;font-size:10px;color:#9b9c96}
+.purchase-column{padding:0 0 20px;min-width:0}
+.category-pill{font-size:10px;font-weight:780;letter-spacing:.14em;color:#9f754e;margin-bottom:13px}
+.purchase-column h1{font-size:clamp(29px,2.65vw,42px);font-weight:680;letter-spacing:-.055em;line-height:1.19;margin:0 0 14px}
+.detail-intro{line-height:1.8;font-size:13px;color:#858881;margin:0 0 15px}
+.status-line{display:flex;align-items:center;gap:8px;color:#786e64;font-size:11px;margin:12px 0 20px;line-height:1.55}
+.status-dot{background:#a98261;width:7px;height:7px;border-radius:50%;flex:0 0 7px}
+.price-panel{padding:18px 20px;background:#f8f7f3;border:1px solid #eeece5;border-radius:8px;display:flex;flex-direction:column;gap:7px;margin:22px 0 24px}
+.price-label{font-size:11px;color:#888780}
+.price-panel strong{font-size:24px;line-height:1.4;font-weight:700;color:#8c5c3f}
+.price-panel>span{font-size:11px;line-height:1.6;color:#918c82}
+.product-options{display:flex;flex-direction:column;gap:17px}
+.field-group{display:flex;flex-direction:column;gap:8px}
+.field-group>label{font-size:12px;font-weight:700}
+.field-group select,.field-group textarea{border:1px solid #d8d8d2;border-radius:6px;background:#fff;color:#3e413d;font-size:13px;padding:13px 14px;line-height:1.4;width:100%;min-height:48px}
+.field-group select{cursor:pointer}
+.field-group textarea{min-height:91px;resize:vertical}
+.field-group select:focus-visible,.field-group textarea:focus-visible{outline:2px solid #b58b6b;outline-offset:1px}
+.field-group small{color:#95938c;font-size:11px;line-height:1.5}
+.quantity-stepper{border:1px solid #d8d8d2;border-radius:6px;display:flex;width:155px;overflow:hidden}
+.quantity-stepper button{font-size:20px;background:#f8f8f5;border:0;width:44px;height:43px}
+.quantity-stepper button:hover{background:#ebe9e2}
+.quantity-stepper input{font:inherit;color:var(--ink);font-size:14px;font-weight:680;text-align:center;border:0;outline:0;min-width:0;width:67px;-moz-appearance:textfield}
+.quantity-stepper input::-webkit-outer-spin-button,.quantity-stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.action-stack{display:flex;flex-direction:column;gap:9px;margin-top:5px}
+.quote-cta{width:100%;min-height:51px;justify-content:center}
+.form-footnote{font-size:11px;color:#96958d;line-height:1.75;margin:14px 0 26px}
+.form-footnote strong{color:#656963}
+.request-notice{background:#fbf7e9;border:1px solid #e8d2ae;color:#6b5842;padding:12px 15px;border-radius:6px;font-size:12px;line-height:1.6}
+.product-accordion{border-top:1px solid #e5e6e0}
+.product-accordion details{border-bottom:1px solid #e5e6e0;padding:14px 0}
+.product-accordion summary{font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+.product-accordion summary:after{content:'+';font-size:20px;font-weight:400;color:#7c786f}
+.product-accordion details[open] summary:after{content:'−'}
+.product-accordion summary::-webkit-details-marker{display:none}
+.product-accordion p{font-size:12px;line-height:1.9;color:#898c82;margin:11px 0 0}
+.detail-related{margin-bottom:85px}
+.related-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.related-card{border:1px solid #f0eee9;border-radius:8px;overflow:hidden}
+.related-card>a{display:block}
+.related-card img{width:100%;height:200px;object-fit:contain;background:#f0eee9;padding:20px}
+.related-card span{display:block;font-size:10px;color:#999990;margin:15px 14px 5px}
+.related-card strong{display:block;font-size:13px;margin:0 14px 17px;line-height:1.5}
+.text-link{font-size:12px;font-weight:720;color:#855a42}
+.zoom-dialog{background:#141514;color:#fff;position:fixed;inset:0;width:100vw;height:100vh;max-height:100vh;max-width:100vw;border:0;padding:48px 45px 34px;overflow:hidden}
+.zoom-dialog::backdrop{background:#111b}
+.zoom-dialog img{width:100%;height:calc(100% - 70px);object-fit:contain}
+.zoom-dialog .zoom-close{position:absolute;top:13px;right:18px;border:0;background:#2c2d2d;color:#fff;font-size:28px;width:44px;height:44px;border-radius:50%}
+.zoom-bottom{display:flex;align-items:center;justify-content:center;gap:24px;font-size:12px;color:#d6d6d6}
+.zoom-bottom button{width:43px;height:39px;background:#313332;color:#fff;border:0;border-radius:5px;font-size:30px}
+.detail-mobile-actions{display:none}
+@media(max-width:1100px){.product-layout{grid-template-columns:minmax(0,1.45fr) minmax(280px,1fr);gap:28px}.media-shell{grid-template-columns:69px minmax(0,1fr)}.media-thumb{width:64px;min-height:72px}.media-viewer{min-height:355px}.try-media{flex-wrap:wrap}.related-card img{height:170px}}
+@media(max-width:800px){.product-layout{grid-template-columns:1fr;gap:33px;padding-bottom:55px}.media-shell{grid-template-columns:1fr;gap:12px}.media-viewer{grid-row:1;min-height:auto;max-height:none;aspect-ratio:1.1/1}.media-thumbnails{grid-row:2;flex-direction:row;max-height:none;overflow-x:auto;overflow-y:hidden;padding:3px 0 10px;scroll-snap-type:x mandatory}.media-thumb{width:72px;min-width:72px;aspect-ratio:1/1;min-height:72px;scroll-snap-align:start}.detail-nav{display:none}.detail-back{margin-left:auto}.media-stage img{padding:24px}.purchase-column h1{font-size:34px}.media-instructions{display:none}.detail-related{margin-bottom:50px}.related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.detail-mobile-actions{display:block;position:fixed;z-index:30;bottom:0;left:0;right:0;background:#fff;padding:10px 16px;border-top:1px solid #ddd9d0}.detail-mobile-actions button{width:100%;background:#292b28;color:#fff;border:0;padding:14px 17px;border-radius:5px;font-size:12px;font-weight:700}.media-description{flex-direction:column;align-items:flex-start}.try-media-button{width:100%;text-align:center}.product-layout{padding-bottom:24px}}
+@media(max-width:480px){.detail-breadcrumb{padding-top:18px;padding-bottom:16px}.product-layout.wrap{width:calc(100% - 26px)}.media-viewer{aspect-ratio:1.06/1}.media-topline{top:9px;left:8px;right:8px}.media-topline span{font-size:9px}.media-arrow{width:37px;height:37px;font-size:27px}.left-arrow{left:7px}.right-arrow{right:7px}.media-favorite{top:50px;right:8px;width:36px;height:36px;font-size:23px}.media-zoom{right:7px;bottom:8px;font-size:11px;padding:8px}.media-stage img{padding:20px}.media-thumb{width:70px;min-width:70px}.detail-back span{display:none}.try-media{padding:18px}.purchase-column h1{font-size:31px}.zoom-dialog{padding:60px 12px 30px}.related-card img{height:145px}.related-grid{gap:12px}}
+
+@media(max-width:800px){body{padding-bottom:72px}}
+
+/* Network sample video: loaded only when user clicks, no auto-play or 3rd-party request before click. */
+.external-video-panel {width:100%;height:100%;min-height:340px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:12px;padding:24px;background:#f3ece4;color:#2e2620}
+.external-video-panel > img {max-width:220px;max-height:180px;object-fit:contain;border-radius:12px}
+.external-video-panel > p {margin:0;max-width:320px;font-size:13px;line-height:1.5}
+.external-video-panel > a {font-size:13px;color:#875637;text-decoration:underline}
+.external-video-play {border:0;border-radius:8px;padding:12px 20px;color:#fff;background:#29231f;cursor:pointer;font-weight:700}
+.external-video-panel > iframe {display:block;width:100%;height:100%;min-height:300px;aspect-ratio:16/9;border:0;border-radius:8px}
+.external-video-panel:has(iframe) {padding:10px;gap:6px;justify-content:center}
+@media (max-width: 600px){.external-video-panel {min-height:280px}.external-video-panel > iframe{min-height:210px}}
+
+</style>
+  <script>
+/* Thay thong tin thuc te truoc khi cong bo website. */
+window.TIEUPHONG_CONFIG = {
+  storeName: 'Đồ Đồng Tiểu Phong',
+  shortName: 'TIỂU PHONG',
+  phone: '',         // VD: 09xxxxxxxx
+  zalo: '',          // VD: 09xxxxxxxx, hoac URL zalo.me/...
+  email: '',         // VD: lienhe@example.com
+  address: '',       // Dia chi cua hang thuc te
+  facebook: '',      // URL fanpage
+  publicPriceMode: 'quote',
+  previewNotice: true
+};
+
+</script>
+  <script>
+/* Anh chup thuc te tu Wikimedia Commons. Anh tu lieu, KHONG PHAI san pham cua cua hang. */
+window.TIEUPHONG_REFERENCE_PHOTOS = {
+  "binh-dong": {
+    "key": "binh-dong",
+    "author": "Gary Todd",
+    "license": "CC0 1.0",
+    "title": "Bình đồng cổ thời Goryeo – ảnh hiện vật bảo tàng",
+    "alt": "Ảnh chụp bình đồng cổ, chỉ là ví dụ cho quà tân gia bằng đồng",
+    "source": "https://commons.wikimedia.org/wiki/File:Bronze_Vase,_Goryeo_Dynasty_(17885205981).jpg",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bronze_Vase%2C_Goryeo_Dynasty_%2817885205981%29.jpg?width=900"
+  },
+  "do-tho": {
+    "key": "do-tho",
+    "author": "Daderot",
+    "license": "CC0 1.0",
+    "title": "Đỉnh đồng truyền thống – hiện vật bảo tàng",
+    "alt": "Ảnh chụp một đỉnh đồng cổ thời Nguyễn tại Bảo tàng Lịch sử Quốc gia",
+    "source": "https://commons.wikimedia.org/wiki/File:Incense_burner,_Nguyen_dynasty,_19th_to_early_20th_century,_bronze_-_National_Museum_of_Vietnamese_History_-_Hanoi,_Vietnam_-_DSC05602.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Incense_burner,_Nguyen_dynasty,_19th_to_early_20th_century,_bronze_-_National_Museum_of_Vietnamese_History_-_Hanoi,_Vietnam_-_DSC05602.JPG/900px-Incense_burner,_Nguyen_dynasty,_19th_to_early_20th_century,_bronze_-_National_Museum_of_Vietnamese_History_-_Hanoi,_Vietnam_-_DSC05602.JPG"
+  },
+  "tranh-dong": {
+    "key": "tranh-dong",
+    "author": "Trần Anh Đức",
+    "license": "CC0 1.0",
+    "title": "Chi tiết phù điêu chạm nổi trên Cửu Đỉnh",
+    "alt": "Ảnh chụp phù điêu chạm nổi Hải Vân Quan trên Cửu Đỉnh Huế",
+    "source": "https://commons.wikimedia.org/wiki/File:Ho%E1%BA%A1_ti%E1%BA%BFt_H%E1%BA%A3i_V%C3%A2n_quan_tr%C3%AAn_C%E1%BB%ADu_%C4%90%E1%BB%89nh.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ho%E1%BA%A1_ti%E1%BA%BFt_H%E1%BA%A3i_V%C3%A2n_quan_tr%C3%AAn_C%E1%BB%ADu_%C4%90%E1%BB%89nh.jpg/900px-Ho%E1%BA%A1_ti%E1%BA%BFt_H%E1%BA%A3i_V%C3%A2n_quan_tr%C3%AAn_C%E1%BB%ADu_%C4%90%E1%BB%89nh.jpg"
+  },
+  "tuong-dong": {
+    "key": "tuong-dong",
+    "author": "Jacklee",
+    "license": "CC BY-SA 3.0",
+    "title": "Tượng Phật bằng đồng tại Bảo tàng Lịch sử TP.HCM",
+    "alt": "Ảnh chụp tượng Phật cổ bằng đồng từ thế kỷ VIII–IX, không phải hàng của cửa hàng",
+    "source": "https://commons.wikimedia.org/wiki/File:Bronze_Buddha_(8%E2%80%939th_century),_Museum_of_Vietnamese_History,_Ho_Chi_Minh_City_-_20121014.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Bronze_Buddha_(8%E2%80%939th_century),_Museum_of_Vietnamese_History,_Ho_Chi_Minh_City_-_20121014.JPG/900px-Bronze_Buddha_(8%E2%80%939th_century),_Museum_of_Vietnamese_History,_Ho_Chi_Minh_City_-_20121014.JPG"
+  },
+  "qua-tang": {
+    "key": "qua-tang",
+    "author": "VuThiAnh",
+    "license": "Public domain",
+    "title": "Trống đồng Đông Sơn – ảnh tư liệu",
+    "alt": "Ảnh chụp trống đồng Đông Sơn thật, mang tính minh họa cho dòng trống đồng",
+    "source": "https://commons.wikimedia.org/wiki/File:DongSonBronzeDrum.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/DongSonBronzeDrum.JPG/900px-DongSonBronzeDrum.JPG"
+  }
+};
+
+</script>
+  <script>
+/* V0.5: 4 MAU DEMO (moi nhom 1 mau), khong phai ton kho cua Tieu Phong. */
+window.TIEUPHONG_PRODUCTS = [
+  {
+    id:'GT001', name:'Trống đồng – quà tặng đối tác (tham khảo)',
+    category:'qua-doanh-nghiep', categoryName:'Quà doanh nghiệp',
+    material:'Đồng (loại cụ thể cần xác nhận)', size:'Tùy kích thước',
+    image:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1pbmggaG9hIGRvIGRvbmciPgogICAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Im1ldGFsIiB4MT0iMCIgeDI9IjEiIHkxPSIwLjIiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGM0M4OTYiLz48c3RvcCBvZmZzZXQ9IjAuMiIgc3RvcC1jb2xvcj0iI0M3ODQ1MiIvPjxzdG9wIG9mZnNldD0iMC40NiIgc3RvcC1jb2xvcj0iIzk2NTAzMCIvPjxzdG9wIG9mZnNldD0iMC43MyIgc3RvcC1jb2xvcj0iI0Q4OTk2MSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc0M0IyNCIvPjwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNoaW5lIiB4MT0iMCIgeDI9IjAuOCIgeTE9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZjJkMmExIi8+PHN0b3Agb2Zmc2V0PSIwLjUiIHN0b3AtY29sb3I9IiNiMzZiNDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4OTQ3MmQiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJnb2xkIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZTJhZSIvPjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjZDQ5YjYyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGI0ZTMxIi8+PC9saW5lYXJHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJldGNoIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0wIDhsOC04bTAgMTYgOC04IiBzdHJva2U9IiNmM2NhOWMiIHN0cm9rZS13aWR0aD0iLjYiIG9wYWNpdHk9Ii4zIi8+PC9wYXR0ZXJuPgogICAgPGZpbHRlciBpZD0iZHJvcCI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNCIvPjwvZmlsdGVyPgogICAgPC9kZWZzPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI5NSIgcj0iMjA3IiBmaWxsPSJub25lIiBzdHJva2U9IiM5ZDY0NDgiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iLjI1Ii8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMjk1IiByPSIxODkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2IwNzk1MyIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuMTkiLz48cGF0aCBkPSJNMTMwIDI5NWgzNDBNMzAwIDgwdjQzMCIgc3Ryb2tlPSIjOGM1NDNiIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9Ii4wNyIvPjxnIHN0cm9rZT0iIzg0NTAyZiIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJ1cmwoI2dvbGQpIj48cGF0aCBkPSJNMTkyIDM0N2gyMTZsLTIwIDg3SDIxMnoiIGZpbGw9InVybCgjbWV0YWwpIi8+PGVsbGlwc2UgY3g9IjMwMCIgY3k9IjM0NyIgcng9IjEwOCIgcnk9IjMyIiBmaWxsPSIjZDNhMTZjIi8+PGVsbGlwc2UgY3g9IjMwMCIgY3k9IjI4NiIgcng9IjE3MCIgcnk9IjE1NiIgZmlsbD0idXJsKCNtZXRhbCkiLz48ZWxsaXBzZSBjeD0iMzAwIiBjeT0iMjg2IiByeD0iMTU0IiByeT0iMTM5IiBmaWxsPSIjY2I5MzY0IiBzdHJva2U9IiNmMGM1OGYiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI4NiIgcj0iMTA1IiBmaWxsPSJub25lIiBzdHJva2U9IiM4NzRhMmMiIHN0cm9rZS13aWR0aD0iMTIiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIyODYiIHI9IjY4IiBmaWxsPSJub25lIiBzdHJva2U9IiNmM2NmOWUiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI4NiIgcj0iMzgiIGZpbGw9IiNiNTdiNDgiIHN0cm9rZT0iI2U0YjU3ZSIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9nPjxnIGZpbGw9IiNmNGNiOTMiIG9wYWNpdHk9Ii45Ij48cGF0aCBkPSJNMzAwIDI0MGwxMiAzNSAzNiAwLTI5IDIyIDEwIDM1LTI5LTIxLTI5IDIxIDEwLTM1LTI5LTIyIDM2IDB6Ii8+PHBhdGggZD0iTTI5NiAxNTVoOHYyOWgtOHpNMjk2IDM4OWg4djI5aC04ek0xNjUgMjgyaDI3djhoLTI3ek00MDcgMjgyaDI3djhoLTI3ek0yMDcgMTk2bDYtNiAyMiAyMi02IDZ6TTM2NiAzNTZsNi02IDIyIDIyLTYgNnpNMzY1IDIxNWwyMi0yNCA2IDYtMjIgMjR6TTIwOSAzNTVsMjItMjIgNiA2LTIyIDIyeiIvPjwvZz48L3N2Zz4=',referencePhoto:'qua-tang', featured:true,
+    desc:'Ảnh trống đồng Đông Sơn là hiện vật tư liệu, không phải mẫu sản phẩm Tiểu Phong. Minh họa nhóm quà đối tác, quà lưu niệm doanh nghiệp.',
+    personalizable:true,
+    media: [
+      {type:'image',src:window.TIEUPHONG_REFERENCE_PHOTOS['qua-tang'].url,
+        fallback:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1pbmggaG9hIGRvIGRvbmciPgogICAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Im1ldGFsIiB4MT0iMCIgeDI9IjEiIHkxPSIwLjIiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGM0M4OTYiLz48c3RvcCBvZmZzZXQ9IjAuMiIgc3RvcC1jb2xvcj0iI0M3ODQ1MiIvPjxzdG9wIG9mZnNldD0iMC40NiIgc3RvcC1jb2xvcj0iIzk2NTAzMCIvPjxzdG9wIG9mZnNldD0iMC43MyIgc3RvcC1jb2xvcj0iI0Q4OTk2MSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc0M0IyNCIvPjwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNoaW5lIiB4MT0iMCIgeDI9IjAuOCIgeTE9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZjJkMmExIi8+PHN0b3Agb2Zmc2V0PSIwLjUiIHN0b3AtY29sb3I9IiNiMzZiNDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4OTQ3MmQiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJnb2xkIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZTJhZSIvPjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjZDQ5YjYyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGI0ZTMxIi8+PC9saW5lYXJHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJldGNoIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0wIDhsOC04bTAgMTYgOC04IiBzdHJva2U9IiNmM2NhOWMiIHN0cm9rZS13aWR0aD0iLjYiIG9wYWNpdHk9Ii4zIi8+PC9wYXR0ZXJuPgogICAgPGZpbHRlciBpZD0iZHJvcCI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNCIvPjwvZmlsdGVyPgogICAgPC9kZWZzPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI5NSIgcj0iMjA3IiBmaWxsPSJub25lIiBzdHJva2U9IiM5ZDY0NDgiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iLjI1Ii8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMjk1IiByPSIxODkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2IwNzk1MyIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuMTkiLz48cGF0aCBkPSJNMTMwIDI5NWgzNDBNMzAwIDgwdjQzMCIgc3Ryb2tlPSIjOGM1NDNiIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9Ii4wNyIvPjxnIHN0cm9rZT0iIzg0NTAyZiIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJ1cmwoI2dvbGQpIj48cGF0aCBkPSJNMTkyIDM0N2gyMTZsLTIwIDg3SDIxMnoiIGZpbGw9InVybCgjbWV0YWwpIi8+PGVsbGlwc2UgY3g9IjMwMCIgY3k9IjM0NyIgcng9IjEwOCIgcnk9IjMyIiBmaWxsPSIjZDNhMTZjIi8+PGVsbGlwc2UgY3g9IjMwMCIgY3k9IjI4NiIgcng9IjE3MCIgcnk9IjE1NiIgZmlsbD0idXJsKCNtZXRhbCkiLz48ZWxsaXBzZSBjeD0iMzAwIiBjeT0iMjg2IiByeD0iMTU0IiByeT0iMTM5IiBmaWxsPSIjY2I5MzY0IiBzdHJva2U9IiNmMGM1OGYiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI4NiIgcj0iMTA1IiBmaWxsPSJub25lIiBzdHJva2U9IiM4NzRhMmMiIHN0cm9rZS13aWR0aD0iMTIiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIyODYiIHI9IjY4IiBmaWxsPSJub25lIiBzdHJva2U9IiNmM2NmOWUiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI4NiIgcj0iMzgiIGZpbGw9IiNiNTdiNDgiIHN0cm9rZT0iI2U0YjU3ZSIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9nPjxnIGZpbGw9IiNmNGNiOTMiIG9wYWNpdHk9Ii45Ij48cGF0aCBkPSJNMzAwIDI0MGwxMiAzNSAzNiAwLTI5IDIyIDEwIDM1LTI5LTIxLTI5IDIxIDEwLTM1LTI5LTIyIDM2IDB6Ii8+PHBhdGggZD0iTTI5NiAxNTVoOHYyOWgtOHpNMjk2IDM4OWg4djI5aC04ek0xNjUgMjgyaDI3djhoLTI3ek00MDcgMjgyaDI3djhoLTI3ek0yMDcgMTk2bDYtNiAyMiAyMi02IDZ6TTM2NiAzNTZsNi02IDIyIDIyLTYgNnpNMzY1IDIxNWwyMi0yNCA2IDYtMjIgMjR6TTIwOSAzNTVsMjItMjIgNiA2LTIyIDIyeiIvPjwvZz48L3N2Zz4=',alt:'Ảnh tư liệu trống đồng Đông Sơn',
+        caption:'Ảnh chụp trống đồng Đông Sơn – hiện vật tư liệu, không phải hàng đang bán',
+        badge:'ẢNH TƯ LIỆU',credit:window.TIEUPHONG_REFERENCE_PHOTOS['qua-tang']},
+      {type:'embed',src:'https://www.youtube-nocookie.com/embed/9jhxte7HV8o?rel=0',
+        source:'https://www.youtube.com/watch?v=9jhxte7HV8o',poster:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1pbmggaG9hIGRvIGRvbmciPgogICAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Im1ldGFsIiB4MT0iMCIgeDI9IjEiIHkxPSIwLjIiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGM0M4OTYiLz48c3RvcCBvZmZzZXQ9IjAuMiIgc3RvcC1jb2xvcj0iI0M3ODQ1MiIvPjxzdG9wIG9mZnNldD0iMC40NiIgc3RvcC1jb2xvcj0iIzk2NTAzMCIvPjxzdG9wIG9mZnNldD0iMC43MyIgc3RvcC1jb2xvcj0iI0Q4OTk2MSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc0M0IyNCIvPjwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNoaW5lIiB4MT0iMCIgeDI9IjAuOCIgeTE9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZjJkMmExIi8+PHN0b3Agb2Zmc2V0PSIwLjUiIHN0b3AtY29sb3I9IiNiMzZiNDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4OTQ3MmQiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJnb2xkIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZTJhZSIvPjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjZDQ5YjYyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGI0ZTMxIi8+PC9saW5lYXJHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJldGNoIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0wIDhsOC04bTAgMTYgOC04IiBzdHJva2U9IiNmM2NhOWMiIHN0cm9rZS13aWR0aD0iLjYiIG9wYWNpdHk9Ii4zIi8+PC9wYXR0ZXJuPgogICAgPGZpbHRlciBpZD0iZHJvcCI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNCIvPjwvZmlsdGVyPgogICAgPC9kZWZzPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI5NSIgcj0iMjA3IiBmaWxsPSJub25lIiBzdHJva2U9IiM5ZDY0NDgiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iLjI1Ii8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMjk1IiByPSIxODkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2IwNzk1MyIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuMTkiLz48cGF0aCBkPSJNMTMwIDI5NWgzNDBNMzAwIDgwdjQzMCIgc3Ryb2tlPSIjOGM1NDNiIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9Ii4wNyIvPjxnIHN0cm9rZT0iIzg0NTAyZiIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJ1cmwoI2dvbGQpIj48cGF0aCBkPSJNMTkyIDM0N2gyMTZsLTIwIDg3SDIxMnoiIGZpbGw9InVybCgjbWV0YWwpIi8+PGVsbGlwc2UgY3g9IjMwMCIgY3k9IjM0NyIgcng9IjEwOCIgcnk9IjMyIiBmaWxsPSIjZDNhMTZjIi8+PGVsbGlwc2UgY3g9IjMwMCIgY3k9IjI4NiIgcng9IjE3MCIgcnk9IjE1NiIgZmlsbD0idXJsKCNtZXRhbCkiLz48ZWxsaXBzZSBjeD0iMzAwIiBjeT0iMjg2IiByeD0iMTU0IiByeT0iMTM5IiBmaWxsPSIjY2I5MzY0IiBzdHJva2U9IiNmMGM1OGYiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI4NiIgcj0iMTA1IiBmaWxsPSJub25lIiBzdHJva2U9IiM4NzRhMmMiIHN0cm9rZS13aWR0aD0iMTIiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIyODYiIHI9IjY4IiBmaWxsPSJub25lIiBzdHJva2U9IiNmM2NmOWUiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI4NiIgcj0iMzgiIGZpbGw9IiNiNTdiNDgiIHN0cm9rZT0iI2U0YjU3ZSIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9nPjxnIGZpbGw9IiNmNGNiOTMiIG9wYWNpdHk9Ii45Ij48cGF0aCBkPSJNMzAwIDI0MGwxMiAzNSAzNiAwLTI5IDIyIDEwIDM1LTI5LTIxLTI5IDIxIDEwLTM1LTI5LTIyIDM2IDB6Ii8+PHBhdGggZD0iTTI5NiAxNTVoOHYyOWgtOHpNMjk2IDM4OWg4djI5aC04ek0xNjUgMjgyaDI3djhoLTI3ek00MDcgMjgyaDI3djhoLTI3ek0yMDcgMTk2bDYtNiAyMiAyMi02IDZ6TTM2NiAzNTZsNi02IDIyIDIyLTYgNnpNMzY1IDIxNWwyMi0yNCA2IDYtMjIgMjR6TTIwOSAzNTVsMjItMjIgNiA2LTIyIDIyeiIvPjwvZz48L3N2Zz4=',
+        alt:'Video tư liệu về trống đồng Việt Nam từ YouTube',
+        caption:'Video văn hóa trống đồng trên YouTube (nguồn ngoài); KHÔNG phải video sản phẩm Tiểu Phong',
+        badge:'VIDEO TRÊN MẠNG'}
+    ]
+  },
+  {
+    id:'GT002',name:'Phù điêu đồng – quà tri ân (tham khảo)',
+    category:'mung-tho',categoryName:'Mừng thọ & tri ân',material:'Đồng (minh họa hoa văn chạm nổi)',
+    size:'Theo mẫu',image:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1pbmggaG9hIGRvIGRvbmciPgogICAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Im1ldGFsIiB4MT0iMCIgeDI9IjEiIHkxPSIwLjIiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGM0M4OTYiLz48c3RvcCBvZmZzZXQ9IjAuMiIgc3RvcC1jb2xvcj0iI0M3ODQ1MiIvPjxzdG9wIG9mZnNldD0iMC40NiIgc3RvcC1jb2xvcj0iIzk2NTAzMCIvPjxzdG9wIG9mZnNldD0iMC43MyIgc3RvcC1jb2xvcj0iI0Q4OTk2MSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc0M0IyNCIvPjwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNoaW5lIiB4MT0iMCIgeDI9IjAuOCIgeTE9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZjJkMmExIi8+PHN0b3Agb2Zmc2V0PSIwLjUiIHN0b3AtY29sb3I9IiNiMzZiNDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4OTQ3MmQiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJnb2xkIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZTJhZSIvPjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjZDQ5YjYyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGI0ZTMxIi8+PC9saW5lYXJHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJldGNoIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0wIDhsOC04bTAgMTYgOC04IiBzdHJva2U9IiNmM2NhOWMiIHN0cm9rZS13aWR0aD0iLjYiIG9wYWNpdHk9Ii4zIi8+PC9wYXR0ZXJuPgogICAgPGZpbHRlciBpZD0iZHJvcCI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNCIvPjwvZmlsdGVyPgogICAgPC9kZWZzPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjMwMCIgcj0iMjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5ZDY0NDgiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iLjI1Ii8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMzAwIiByPSIyMDYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2IwNzk1MyIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuMTkiLz48cGF0aCBkPSJNMTMwIDI5NWgzNDBNMzAwIDgwdjQzMCIgc3Ryb2tlPSIjOGM1NDNiIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9Ii4wNyIvPjxnIHN0cm9rZT0iIzg3NTEyZSIgc3Ryb2tlLXdpZHRoPSIyLjgiPjxyZWN0IHg9IjEwNiIgeT0iMTQ1IiB3aWR0aD0iMzg4IiBoZWlnaHQ9IjMxNiIgZmlsbD0idXJsKCNtZXRhbCkiLz48cmVjdCB4PSIxMjYiIHk9IjE2NSIgd2lkdGg9IjM0OCIgaGVpZ2h0PSIyNzYiIGZpbGw9IiNiNzgyNTkiIHN0cm9rZT0iI2VmY2Y5YiIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHJlY3QgeD0iMTQzIiB5PSIxODMiIHdpZHRoPSIzMTQiIGhlaWdodD0iMjM5IiBmaWxsPSIjZTViZDhkIi8+PHBhdGggZD0iTTE1MCAzNThxNjAtMTEyIDEyMC03OCA2My0xMDUgMTI2LTI2IDI0LTEyIDU1LTQ0djIwOEgxNTB6IiBmaWxsPSIjOWU2MDNjIiBvcGFjaXR5PSIuNjQiLz48cGF0aCBkPSJNMTQ1IDM0N3ExMTAtNjUgMTg3LTExIDUwLTIwIDEyNi00IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmUyYjIiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9IjM2OSIgY3k9IjI0NiIgcj0iMzMiIHN0cm9rZT0iI2M3ODc0OSIgZmlsbD0iI2YxZDI5ZCIvPjxwYXRoIGQ9Ik0xODQgMzY4cTI2LTUxIDQ5LTM1IDM3LTcxIDcwLTQzTTMwNiAzMzVxMjUtMjYgNDUtOE0xNTggMzk0aDI4NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNmM0NDJkIiBzdHJva2Utd2lkdGg9IjQiLz48cGF0aCBkPSJNMTY5IDIxMXEyMyAxNCA0NSAwTTE3NCAyMzRxMzEgMjIgNjIgME0yOTAgMjA5cTE5LTE3IDM4IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZhZjFkYiIgb3BhY2l0eT0iLjYiLz48L2c+PC9zdmc+',referencePhoto:'tranh-dong',featured:true,
+    desc:'Ảnh phù điêu trên Cửu Đỉnh ở Huế dùng để giới thiệu kỹ thuật chạm nổi trên đồng; không phải một mẫu tranh mừng thọ sẵn bán.',personalizable:true
+  },
+  {
+    id:'GT003',name:'Bình đồng trang trí – quà tân gia (tham khảo)',
+    category:'tan-gia',categoryName:'Tân gia & gia đình',material:'Đồng (mẫu tư liệu)',
+    size:'Theo mẫu',image:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1pbmggaG9hIGRvIGRvbmciPgogICAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Im1ldGFsIiB4MT0iMCIgeDI9IjEiIHkxPSIwLjIiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGM0M4OTYiLz48c3RvcCBvZmZzZXQ9IjAuMiIgc3RvcC1jb2xvcj0iI0M3ODQ1MiIvPjxzdG9wIG9mZnNldD0iMC40NiIgc3RvcC1jb2xvcj0iIzk2NTAzMCIvPjxzdG9wIG9mZnNldD0iMC43MyIgc3RvcC1jb2xvcj0iI0Q4OTk2MSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc0M0IyNCIvPjwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNoaW5lIiB4MT0iMCIgeDI9IjAuOCIgeTE9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZjJkMmExIi8+PHN0b3Agb2Zmc2V0PSIwLjUiIHN0b3AtY29sb3I9IiNiMzZiNDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4OTQ3MmQiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJnb2xkIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZTJhZSIvPjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjZDQ5YjYyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGI0ZTMxIi8+PC9saW5lYXJHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJldGNoIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0wIDhsOC04bTAgMTYgOC04IiBzdHJva2U9IiNmM2NhOWMiIHN0cm9rZS13aWR0aD0iLjYiIG9wYWNpdHk9Ii4zIi8+PC9wYXR0ZXJuPgogICAgPGZpbHRlciBpZD0iZHJvcCI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNCIvPjwvZmlsdGVyPgogICAgPC9kZWZzPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI5NSIgcj0iMjA3IiBmaWxsPSJub25lIiBzdHJva2U9IiM5ZDY0NDgiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iLjI1Ii8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMjk1IiByPSIxODkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2IwNzk1MyIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuMTkiLz48cGF0aCBkPSJNMTMwIDI5NWgzNDBNMzAwIDgwdjQzMCIgc3Ryb2tlPSIjOGM1NDNiIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9Ii4wNyIvPjxnIHN0cm9rZT0iIzc3NDMyYyIgc3Ryb2tlLXdpZHRoPSIzIj48cGF0aCBkPSJNMjQxIDEzN2gxMTh2MzVIMjQxeiIgZmlsbD0idXJsKCNtZXRhbCkiLz48cGF0aCBkPSJNMjM4IDE2N3EtMjAgMzUtNDggNzQtNTEgNzEtNiAxNjkgMjMgNjUgMTE2IDY1IDkzIDAgMTE2LTY1IDQ1LTk4LTYtMTY5LTI4LTM5LTQ4LTc0IiBmaWxsPSJ1cmwoI21ldGFsKSIvPjxwYXRoIGQ9Ik0yMzYgMjI2cS04MC0zOC04OCAxMi03IDYzIDU0IDcwTTM2NCAyMjZxODAtMzggODggMTIgNyA2My01NCA3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYjA3MTQzIiBzdHJva2Utd2lkdGg9IjEzIi8+PHBhdGggZD0iTTIzOCAxODloMTI0TTIwNiAzODVoMTg4TTIyOCA0NThoMTQ0IiBzdHJva2U9IiNmNGNjYTAiIHN0cm9rZS13aWR0aD0iNCIvPjxwYXRoIGQ9Ik0yMzAgMzEwcTcwLTg4IDE0MCAwLTY5IDc1LTE0MCAweiIgc3Ryb2tlPSIjZTdiYzg4IiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjQiLz48cGF0aCBkPSJNMjY1IDMzMHEzNS0zOCA3MCAwIiBzdHJva2U9IiNmMWQ2YTgiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjMwMSIgcj0iMjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2YwYmY4MiIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9nPjwvc3ZnPg==',referencePhoto:'binh-dong',featured:true,
+    desc:'Ảnh hiện vật bình đồng cổ thời Goryeo, chỉ dùng thử cách trưng bày ảnh của dòng bình đồng trang trí; không phải hàng của cửa hàng.',personalizable:false
+  },
+  {
+    id:'GT004',name:'Tượng đồng – quà lưu niệm (tham khảo)',
+    category:'qua-luu-niem',categoryName:'Quà lưu niệm',material:'Đồng (mẫu tư liệu)',
+    size:'Theo mẫu',image:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1pbmggaG9hIGRvIGRvbmciPgogICAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Im1ldGFsIiB4MT0iMCIgeDI9IjEiIHkxPSIwLjIiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGM0M4OTYiLz48c3RvcCBvZmZzZXQ9IjAuMiIgc3RvcC1jb2xvcj0iI0M3ODQ1MiIvPjxzdG9wIG9mZnNldD0iMC40NiIgc3RvcC1jb2xvcj0iIzk2NTAzMCIvPjxzdG9wIG9mZnNldD0iMC43MyIgc3RvcC1jb2xvcj0iI0Q4OTk2MSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc0M0IyNCIvPjwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNoaW5lIiB4MT0iMCIgeDI9IjAuOCIgeTE9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZjJkMmExIi8+PHN0b3Agb2Zmc2V0PSIwLjUiIHN0b3AtY29sb3I9IiNiMzZiNDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4OTQ3MmQiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJnb2xkIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZTJhZSIvPjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjZDQ5YjYyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGI0ZTMxIi8+PC9saW5lYXJHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJldGNoIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0wIDhsOC04bTAgMTYgOC04IiBzdHJva2U9IiNmM2NhOWMiIHN0cm9rZS13aWR0aD0iLjYiIG9wYWNpdHk9Ii4zIi8+PC9wYXR0ZXJuPgogICAgPGZpbHRlciBpZD0iZHJvcCI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNCIvPjwvZmlsdGVyPgogICAgPC9kZWZzPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjI5NSIgcj0iMjA3IiBmaWxsPSJub25lIiBzdHJva2U9IiM5ZDY0NDgiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iLjI1Ii8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMjk1IiByPSIxODkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2IwNzk1MyIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuMTkiLz48cGF0aCBkPSJNMTMwIDI5NWgzNDBNMzAwIDgwdjQzMCIgc3Ryb2tlPSIjOGM1NDNiIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9Ii4wNyIvPjxnIHN0cm9rZT0iIzdhNDcyZSIgc3Ryb2tlLXdpZHRoPSIzIj48Y2lyY2xlIGN4PSIzMDAiIGN5PSIxODQiIHI9IjYzIiBmaWxsPSJ1cmwoI2dvbGQpIi8+PHBhdGggZD0iTTI3MiAxMTZxLTctNDEgMTEtNDMgMTAtMiAxNSAxNiAxMi0yMSAyMy04IDkgMTItNyAzNyIgZmlsbD0idXJsKCNtZXRhbCkiLz48cGF0aCBkPSJNMjYwIDE3NnE0MCAzOSA4MCAwIiBmaWxsPSJub25lIiBzdHJva2U9IiM5YjVjM2MiIHN0cm9rZS13aWR0aD0iNCIvPjxwYXRoIGQ9Ik0yOTAgMjA0cTEwIDggMjAgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjODA1MDNhIi8+PHBhdGggZD0iTTI0NCAyMzlxNTYgMjUgMTEyIDBsMzQgMzAgMTUgMTIwcS00IDY0LTEwNSA3OC0xMDEtMTQtMTA1LTc4bDE1LTEyMHoiIGZpbGw9InVybCgjbWV0YWwpIi8+PHBhdGggZD0iTTIxMCAyOTlxLTQzIDM4LTIyIDcxbDQ5IDMyTTM5MCAyOTlxNDMgMzggMjIgNzFsLTQ5IDMyIiBmaWxsPSJ1cmwoI2dvbGQpIi8+PHBhdGggZD0iTTIzMiAzOThxNjggNDAgMTM2IDBNMjMwIDQ0NnE3MCAzNSAxNDAgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZTRiNzgxIiBzdHJva2Utd2lkdGg9IjUiLz48cGF0aCBkPSJNMzAwIDI3OHEtMjIgMjcgMCA1MyAyMi0yNiAwLTUzTTI3MiAzMDJxMCAzNSAyOCAzMiAyOCAzIDI4LTMyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmNGQyOWEiIHN0cm9rZS13aWR0aD0iMyIvPjwvZz48cGF0aCBkPSJNMTk2IDQ3M2gyMDgiIHN0cm9rZT0iIzhhNTQzOSIgc3Ryb2tlLXdpZHRoPSI2Ii8+PC9zdmc+',referencePhoto:'tuong-dong',featured:true,
+    desc:'Ảnh một tượng Phật bằng đồng tại Bảo tàng Lịch sử TP.HCM. Dùng minh họa chất liệu và cách xem sản phẩm, không đại diện cho hàng đang bán.',personalizable:false
+  }
+];
+
+</script>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const products = Array.isArray(window.TIEUPHONG_PRODUCTS) ? window.TIEUPHONG_PRODUCTS : [];
+  const references = window.TIEUPHONG_REFERENCE_PHOTOS || {};
+  const params = new URLSearchParams(window.location.search);
+  const product = products.find(item => item.id === params.get('id')) || products.find(item => item.id === 'GT001') || products[0];
+  if (!product) return;
+  const favStorage = 'do-dong-tieu-phong-favorites-v05';
+  const quoteStorage = 'do-dong-tieu-phong-quote-v01';
+  let media = [];
+  let index = 0;
+  let touchStart = null;
+  let objectUrls = [];
+  let favorite = false;
+  const memoryStorage = new Map(); // Fallback when localStorage is blocked in a local HTML preview
+  const safeText = (value) => String(value ?? '');
+
+  function saveStorage(key, value) { memoryStorage.set(key, [...value]); try { localStorage.setItem(key, JSON.stringify(value)); } catch (_) { /* use in-memory fallback */ } }
+  function loadStorage(key) { try { const value = JSON.parse(localStorage.getItem(key) || '[]'); return Array.isArray(value) ? value : []; } catch (_) { return memoryStorage.get(key) || []; } }
+  function getImage(productInfo) {
+    const ref = references[productInfo.referencePhoto];
+    return {src: ref?.url || productInfo.image, fallback: productInfo.image, credit: ref || null};
+  }
+  function addMedia(item) { media.push(item); }
+  function setUpMedia() {
+    // Phien ban du lieu thuc: moi san pham co the co mang media tuy chinh.
+    // Anh/video phai co quyen su dung. V0.5 chua co trang quan tri upload.
+    if (Array.isArray(product.media) && product.media.length) {
+      product.media.forEach(entry => {
+        if (!['image','video','embed'].includes(entry.type) || typeof entry.src !== 'string' || !entry.src.trim()) return;
+        const item = {
+          type:entry.type, src:entry.src,
+          fallback:entry.fallback || product.image,
+          poster:entry.poster || product.image,
+          alt:entry.alt || product.name,
+          caption:entry.caption || 'Hình ảnh/video sản phẩm',
+          badge:entry.badge || (entry.type==='video' || entry.type==='embed'?'Video':'Ảnh'),
+          source:entry.source || null,
+          credit:entry.credit || null
+        };
+        addMedia(item);
+      });
+      if (media.length) return;
+    }
+    const main = getImage(product);
+    addMedia({type:'image',src:main.src,fallback:main.fallback,alt:'Ảnh tham khảo ' + product.name,caption:main.credit ? 'Ảnh chụp tư liệu hiện vật, không phải mẫu đang bán' : 'Hình minh họa sản phẩm, chưa phải mẫu đang bán',credit:main.credit,badge:main.credit ? 'Ảnh tư liệu' : 'Hình minh họa'});
+    addMedia({type:'image',src:product.image,fallback:product.image,alt:'Minh họa hình dáng ' + product.name,caption:'Hình minh họa để kiểm tra cách xem nhiều ảnh',badge:'Hình minh họa'});
+    if (product.id === 'GT001' || product.id === 'GT011') {
+      addMedia({type:'image',src:'assets/trong-dong-detail-demo.webp',fallback:product.image,alt:'Phóng lớn họa tiết minh họa trên trống đồng',caption:'Cận cảnh được dựng từ hình minh họa, không phải ảnh sản phẩm thật',badge:'Cận cảnh mô phỏng'});
+      addMedia({type:'image',src:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgOTAwIDgwMCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB4Mj0iMSIgeTE9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZjVmMWU5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWJlMmQ1Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9Indvb2QiIHgxPSIwIiB4Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzcwNGEzMiIvPjxzdG9wIG9mZnNldD0iLjUyIiBzdG9wLWNvbG9yPSIjOWM3MDUyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNTczODIxIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGQiIHgxPSIwIiB4Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzk4NjEyZSIvPjxzdG9wIG9mZnNldD0iLjMzIiBzdG9wLWNvbG9yPSIjZWJjMDc3Ii8+PHN0b3Agb2Zmc2V0PSIuNyIgc3RvcC1jb2xvcj0iI2E5N2E0MiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc2NDQyMCIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2hhZG93Ij48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCIvPjwvZmlsdGVyPjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjYmcpIi8+PGVsbGlwc2UgY3g9IjQ1NyIgY3k9IjcwOCIgcng9IjI5MyIgcnk9IjQyIiBmaWxsPSIjODE2NTRjIiBvcGFjaXR5PSIuMTMiIGZpbHRlcj0idXJsKCNzaGFkb3cpIi8+CjxwYXRoIGQ9Ik0yMDUgMzAwIEw0NDUgMjM1IDY5NSAzMDMgNjk1IDYxOCA0NTUgNjc3IDIwNCA2MDdaIiBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiM2YzRiMzIiIHN0cm9rZS13aWR0aD0iMTAiLz4KPHBhdGggZD0iTTIwNSAzMDBMNDU1IDM2MyA2OTUgMzAzTTQ1NSAzNjNWNjc3IiBmaWxsPSJub25lIiBzdHJva2U9IiNjNjljNzMiIHN0cm9rZS13aWR0aD0iMTIiLz4KPHBhdGggZD0iTTIxMiAzMTJMNDU1IDM2OCA2OTUgMzA5IiBmaWxsPSJub25lIiBzdHJva2U9IiMzMjFkMTQiIHN0cm9rZS13aWR0aD0iNiIgb3BhY2l0eT0iLjUiLz4KPHBhdGggZD0iTTI1NSAyODBMNDQ1IDIxOCA2NTUgMjgwIDQ1MyAzMzdaIiBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiM2OTQ2MmIiIHN0cm9rZS13aWR0aD0iOCIvPgo8cmVjdCB4PSIzNjYiIHk9IjQxOCIgd2lkdGg9IjE2OSIgaGVpZ2h0PSIxNTMiIHJ4PSIxMCIgZmlsbD0iIzU0MzkyNCIgc3Ryb2tlPSIjZDliYTg3IiBzdHJva2Utd2lkdGg9IjUiLz48Y2lyY2xlIGN4PSI0NTAiIGN5PSI0OTEiIHI9IjU1IiBmaWxsPSJ1cmwoI2dvbGQpIiBzdHJva2U9IiNlZmM1ODciIHN0cm9rZS13aWR0aD0iNiIvPgo8cGF0aCBkPSJNNDE0IDQ5MmwzNS0yNyAzNSAyNy0zNSAzMHoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzc4NGMyOCIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iNDUwIiB5PSI2MDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZjJkNWFkIiBmb250LXNpemU9IjIwIiBsZXR0ZXItc3BhY2luZz0iNCI+R0lGVCBCT1g8L3RleHQ+CjxyZWN0IHg9IjI4MCIgeT0iOTAiIHdpZHRoPSIzNDUiIGhlaWdodD0iNTMiIHJ4PSIyNyIgZmlsbD0iI2ZmZmJmNCIgb3BhY2l0eT0iLjg3Ii8+PHRleHQgeD0iNDUyIiB5PSIxMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCIgZm9udC1zaXplPSIyMiIgZmlsbD0iIzczNTQzOSI+TeG6qlUgSOG7mFAgUVXDgCBNSU5IIEjhu4xBPC90ZXh0Pgo8dGV4dCB4PSI0NTAiIHk9Ijc0NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5Nzg2NzEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNoxrBhIHBo4bqjaSBt4bqrdSDEkcOzbmcgZ8OzaSBj4bunYSBj4butYSBow6BuZzwvdGV4dD4KPC9zdmc+Cg==',fallback:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgOTAwIDgwMCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB4Mj0iMSIgeTE9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZjVmMWU5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWJlMmQ1Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9Indvb2QiIHgxPSIwIiB4Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzcwNGEzMiIvPjxzdG9wIG9mZnNldD0iLjUyIiBzdG9wLWNvbG9yPSIjOWM3MDUyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNTczODIxIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGQiIHgxPSIwIiB4Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzk4NjEyZSIvPjxzdG9wIG9mZnNldD0iLjMzIiBzdG9wLWNvbG9yPSIjZWJjMDc3Ii8+PHN0b3Agb2Zmc2V0PSIuNyIgc3RvcC1jb2xvcj0iI2E5N2E0MiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc2NDQyMCIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2hhZG93Ij48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCIvPjwvZmlsdGVyPjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjYmcpIi8+PGVsbGlwc2UgY3g9IjQ1NyIgY3k9IjcwOCIgcng9IjI5MyIgcnk9IjQyIiBmaWxsPSIjODE2NTRjIiBvcGFjaXR5PSIuMTMiIGZpbHRlcj0idXJsKCNzaGFkb3cpIi8+CjxwYXRoIGQ9Ik0yMDUgMzAwIEw0NDUgMjM1IDY5NSAzMDMgNjk1IDYxOCA0NTUgNjc3IDIwNCA2MDdaIiBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiM2YzRiMzIiIHN0cm9rZS13aWR0aD0iMTAiLz4KPHBhdGggZD0iTTIwNSAzMDBMNDU1IDM2MyA2OTUgMzAzTTQ1NSAzNjNWNjc3IiBmaWxsPSJub25lIiBzdHJva2U9IiNjNjljNzMiIHN0cm9rZS13aWR0aD0iMTIiLz4KPHBhdGggZD0iTTIxMiAzMTJMNDU1IDM2OCA2OTUgMzA5IiBmaWxsPSJub25lIiBzdHJva2U9IiMzMjFkMTQiIHN0cm9rZS13aWR0aD0iNiIgb3BhY2l0eT0iLjUiLz4KPHBhdGggZD0iTTI1NSAyODBMNDQ1IDIxOCA2NTUgMjgwIDQ1MyAzMzdaIiBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiM2OTQ2MmIiIHN0cm9rZS13aWR0aD0iOCIvPgo8cmVjdCB4PSIzNjYiIHk9IjQxOCIgd2lkdGg9IjE2OSIgaGVpZ2h0PSIxNTMiIHJ4PSIxMCIgZmlsbD0iIzU0MzkyNCIgc3Ryb2tlPSIjZDliYTg3IiBzdHJva2Utd2lkdGg9IjUiLz48Y2lyY2xlIGN4PSI0NTAiIGN5PSI0OTEiIHI9IjU1IiBmaWxsPSJ1cmwoI2dvbGQpIiBzdHJva2U9IiNlZmM1ODciIHN0cm9rZS13aWR0aD0iNiIvPgo8cGF0aCBkPSJNNDE0IDQ5MmwzNS0yNyAzNSAyNy0zNSAzMHoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzc4NGMyOCIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iNDUwIiB5PSI2MDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZjJkNWFkIiBmb250LXNpemU9IjIwIiBsZXR0ZXItc3BhY2luZz0iNCI+R0lGVCBCT1g8L3RleHQ+CjxyZWN0IHg9IjI4MCIgeT0iOTAiIHdpZHRoPSIzNDUiIGhlaWdodD0iNTMiIHJ4PSIyNyIgZmlsbD0iI2ZmZmJmNCIgb3BhY2l0eT0iLjg3Ii8+PHRleHQgeD0iNDUyIiB5PSIxMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCIgZm9udC1zaXplPSIyMiIgZmlsbD0iIzczNTQzOSI+TeG6qlUgSOG7mFAgUVXDgCBNSU5IIEjhu4xBPC90ZXh0Pgo8dGV4dCB4PSI0NTAiIHk9Ijc0NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5Nzg2NzEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNoxrBhIHBo4bqjaSBt4bqrdSDEkcOzbmcgZ8OzaSBj4bunYSBj4butYSBow6BuZzwvdGV4dD4KPC9zdmc+Cg==',alt:'Hộp quà minh họa, chưa chốt mẫu đóng gói',caption:'Minh họa phương án đóng gói, cần xác nhận với cửa hàng',badge:'Bao bì minh họa'});
+      addMedia({type:'video',src:'assets/demo-gift.mp4',poster:'assets/gift-video-poster.jpg',alt:'Video mô phỏng cách trình bày trống đồng',caption:'Video 6 giây chuyển động từ HÌNH MINH HỌA, không phải video quay hàng thực tế',badge:'Video demo'});
+      // Video duoc dua len vi tri 3 de thay ngay ca tren man hinh dien thoai.
+      media.splice(2, 0, media.pop());
+    } else {
+      addMedia({type:'image',src:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgOTAwIDgwMCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB4Mj0iMSIgeTE9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZjVmMWU5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWJlMmQ1Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9Indvb2QiIHgxPSIwIiB4Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzcwNGEzMiIvPjxzdG9wIG9mZnNldD0iLjUyIiBzdG9wLWNvbG9yPSIjOWM3MDUyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNTczODIxIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGQiIHgxPSIwIiB4Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzk4NjEyZSIvPjxzdG9wIG9mZnNldD0iLjMzIiBzdG9wLWNvbG9yPSIjZWJjMDc3Ii8+PHN0b3Agb2Zmc2V0PSIuNyIgc3RvcC1jb2xvcj0iI2E5N2E0MiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc2NDQyMCIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2hhZG93Ij48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCIvPjwvZmlsdGVyPjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjYmcpIi8+PGVsbGlwc2UgY3g9IjQ1NyIgY3k9IjcwOCIgcng9IjI5MyIgcnk9IjQyIiBmaWxsPSIjODE2NTRjIiBvcGFjaXR5PSIuMTMiIGZpbHRlcj0idXJsKCNzaGFkb3cpIi8+CjxwYXRoIGQ9Ik0yMDUgMzAwIEw0NDUgMjM1IDY5NSAzMDMgNjk1IDYxOCA0NTUgNjc3IDIwNCA2MDdaIiBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiM2YzRiMzIiIHN0cm9rZS13aWR0aD0iMTAiLz4KPHBhdGggZD0iTTIwNSAzMDBMNDU1IDM2MyA2OTUgMzAzTTQ1NSAzNjNWNjc3IiBmaWxsPSJub25lIiBzdHJva2U9IiNjNjljNzMiIHN0cm9rZS13aWR0aD0iMTIiLz4KPHBhdGggZD0iTTIxMiAzMTJMNDU1IDM2OCA2OTUgMzA5IiBmaWxsPSJub25lIiBzdHJva2U9IiMzMjFkMTQiIHN0cm9rZS13aWR0aD0iNiIgb3BhY2l0eT0iLjUiLz4KPHBhdGggZD0iTTI1NSAyODBMNDQ1IDIxOCA2NTUgMjgwIDQ1MyAzMzdaIiBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiM2OTQ2MmIiIHN0cm9rZS13aWR0aD0iOCIvPgo8cmVjdCB4PSIzNjYiIHk9IjQxOCIgd2lkdGg9IjE2OSIgaGVpZ2h0PSIxNTMiIHJ4PSIxMCIgZmlsbD0iIzU0MzkyNCIgc3Ryb2tlPSIjZDliYTg3IiBzdHJva2Utd2lkdGg9IjUiLz48Y2lyY2xlIGN4PSI0NTAiIGN5PSI0OTEiIHI9IjU1IiBmaWxsPSJ1cmwoI2dvbGQpIiBzdHJva2U9IiNlZmM1ODciIHN0cm9rZS13aWR0aD0iNiIvPgo8cGF0aCBkPSJNNDE0IDQ5MmwzNS0yNyAzNSAyNy0zNSAzMHoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzc4NGMyOCIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iNDUwIiB5PSI2MDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZjJkNWFkIiBmb250LXNpemU9IjIwIiBsZXR0ZXItc3BhY2luZz0iNCI+R0lGVCBCT1g8L3RleHQ+CjxyZWN0IHg9IjI4MCIgeT0iOTAiIHdpZHRoPSIzNDUiIGhlaWdodD0iNTMiIHJ4PSIyNyIgZmlsbD0iI2ZmZmJmNCIgb3BhY2l0eT0iLjg3Ii8+PHRleHQgeD0iNDUyIiB5PSIxMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCIgZm9udC1zaXplPSIyMiIgZmlsbD0iIzczNTQzOSI+TeG6qlUgSOG7mFAgUVXDgCBNSU5IIEjhu4xBPC90ZXh0Pgo8dGV4dCB4PSI0NTAiIHk9Ijc0NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5Nzg2NzEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNoxrBhIHBo4bqjaSBt4bqrdSDEkcOzbmcgZ8OzaSBj4bunYSBj4butYSBow6BuZzwvdGV4dD4KPC9zdmc+Cg==',fallback:'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgOTAwIDgwMCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB4Mj0iMSIgeTE9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZjVmMWU5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWJlMmQ1Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9Indvb2QiIHgxPSIwIiB4Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzcwNGEzMiIvPjxzdG9wIG9mZnNldD0iLjUyIiBzdG9wLWNvbG9yPSIjOWM3MDUyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNTczODIxIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGQiIHgxPSIwIiB4Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzk4NjEyZSIvPjxzdG9wIG9mZnNldD0iLjMzIiBzdG9wLWNvbG9yPSIjZWJjMDc3Ii8+PHN0b3Agb2Zmc2V0PSIuNyIgc3RvcC1jb2xvcj0iI2E5N2E0MiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc2NDQyMCIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2hhZG93Ij48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCIvPjwvZmlsdGVyPjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjYmcpIi8+PGVsbGlwc2UgY3g9IjQ1NyIgY3k9IjcwOCIgcng9IjI5MyIgcnk9IjQyIiBmaWxsPSIjODE2NTRjIiBvcGFjaXR5PSIuMTMiIGZpbHRlcj0idXJsKCNzaGFkb3cpIi8+CjxwYXRoIGQ9Ik0yMDUgMzAwIEw0NDUgMjM1IDY5NSAzMDMgNjk1IDYxOCA0NTUgNjc3IDIwNCA2MDdaIiBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiM2YzRiMzIiIHN0cm9rZS13aWR0aD0iMTAiLz4KPHBhdGggZD0iTTIwNSAzMDBMNDU1IDM2MyA2OTUgMzAzTTQ1NSAzNjNWNjc3IiBmaWxsPSJub25lIiBzdHJva2U9IiNjNjljNzMiIHN0cm9rZS13aWR0aD0iMTIiLz4KPHBhdGggZD0iTTIxMiAzMTJMNDU1IDM2OCA2OTUgMzA5IiBmaWxsPSJub25lIiBzdHJva2U9IiMzMjFkMTQiIHN0cm9rZS13aWR0aD0iNiIgb3BhY2l0eT0iLjUiLz4KPHBhdGggZD0iTTI1NSAyODBMNDQ1IDIxOCA2NTUgMjgwIDQ1MyAzMzdaIiBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiM2OTQ2MmIiIHN0cm9rZS13aWR0aD0iOCIvPgo8cmVjdCB4PSIzNjYiIHk9IjQxOCIgd2lkdGg9IjE2OSIgaGVpZ2h0PSIxNTMiIHJ4PSIxMCIgZmlsbD0iIzU0MzkyNCIgc3Ryb2tlPSIjZDliYTg3IiBzdHJva2Utd2lkdGg9IjUiLz48Y2lyY2xlIGN4PSI0NTAiIGN5PSI0OTEiIHI9IjU1IiBmaWxsPSJ1cmwoI2dvbGQpIiBzdHJva2U9IiNlZmM1ODciIHN0cm9rZS13aWR0aD0iNiIvPgo8cGF0aCBkPSJNNDE0IDQ5MmwzNS0yNyAzNSAyNy0zNSAzMHoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzc4NGMyOCIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iNDUwIiB5PSI2MDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZjJkNWFkIiBmb250LXNpemU9IjIwIiBsZXR0ZXItc3BhY2luZz0iNCI+R0lGVCBCT1g8L3RleHQ+CjxyZWN0IHg9IjI4MCIgeT0iOTAiIHdpZHRoPSIzNDUiIGhlaWdodD0iNTMiIHJ4PSIyNyIgZmlsbD0iI2ZmZmJmNCIgb3BhY2l0eT0iLjg3Ii8+PHRleHQgeD0iNDUyIiB5PSIxMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCIgZm9udC1zaXplPSIyMiIgZmlsbD0iIzczNTQzOSI+TeG6qlUgSOG7mFAgUVXDgCBNSU5IIEjhu4xBPC90ZXh0Pgo8dGV4dCB4PSI0NTAiIHk9Ijc0NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5Nzg2NzEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNoxrBhIHBo4bqjaSBt4bqrdSDEkcOzbmcgZ8OzaSBj4bunYSBj4butYSBow6BuZzwvdGV4dD4KPC9zdmc+Cg==',alt:'Minh họa tùy chọn đóng gói quà',caption:'Hình minh họa lựa chọn đóng gói (không phải bộ sản phẩm cụ thể)',badge:'Bao bì minh họa'});
+    }
+  }
+  function applyFallback(element, fallback) {
+    if (!fallback) return;
+    element.addEventListener('error', () => {
+      if (element.dataset.fallbackApplied) return;
+      element.dataset.fallbackApplied='true';element.src=fallback;
+      element.classList.remove('is-real-photo');
+    }, {once:true});
+  }
+  function thumb(item, i) {
+    const button=document.createElement('button');
+    button.type='button';button.className='media-thumb';button.dataset.index=String(i);
+    button.setAttribute('aria-label', (item.type==='video'||item.type==='embed'?'Phát video: ':'Ảnh: ')+item.alt);
+    button.setAttribute('aria-pressed',String(i===index));
+    const image=document.createElement('img');image.loading='lazy';image.src=(item.type==='video'||item.type==='embed') ? item.poster : item.src;
+    image.alt=''; applyFallback(image,item.fallback);button.appendChild(image);
+    if(item.type==='video'||item.type==='embed') { const tag=document.createElement('span'); tag.className='media-video-marker';tag.textContent='▶ VIDEO';button.appendChild(tag);}
+    button.addEventListener('click',()=>show(i));
+    return button;
+  }
+  function renderThumbs() {
+    const holder=$('mediaThumbnails');holder.replaceChildren(...media.map(thumb));
+  }
+  function pauseVideo() {
+    const old=$('mediaStage').querySelector('video');
+    if(old) {old.pause();old.removeAttribute('src');old.load();}
+  }
+  function show(next, options={}) {
+    if(!media.length)return;
+    pauseVideo();
+    index=(next+media.length)%media.length;
+    const item=media[index],stage=$('mediaStage'); stage.replaceChildren();
+    if(item.type==='video') {
+      const video=document.createElement('video');video.controls=true;video.playsInline=true;video.preload='metadata';video.poster=item.poster;video.src=item.src;
+      video.setAttribute('aria-label',item.alt);video.setAttribute('controlsList','nodownload');
+      stage.appendChild(video);
+    } else if (item.type==='embed') {
+      const panel=document.createElement('div');panel.className='external-video-panel';
+      const preview=document.createElement('img');preview.src=item.poster || product.image;preview.alt='Ảnh đại diện video ngoài';
+      applyFallback(preview,product.image);
+      const title=document.createElement('strong');title.textContent='VIDEO TƯ LIỆU TRÊN MẠNG';
+      const info=document.createElement('p');info.textContent='Nguồn YouTube bên ngoài · Không phải video sản phẩm của cửa hàng';
+      const play=document.createElement('button');play.type='button';play.className='external-video-play';play.textContent='▶ Phát video';
+      const link=document.createElement('a');link.href=item.source || item.src;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Mở video gốc ↗';
+      play.addEventListener('click',()=>{
+        if(!/^https:\/\/www\.youtube-nocookie\.com\/embed\/[a-zA-Z0-9_-]{11}(?:\?[^#]*)?$/.test(item.src))return;
+        const frame=document.createElement('iframe');frame.src=item.src;frame.title=item.alt;frame.allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share';
+        frame.referrerPolicy='strict-origin-when-cross-origin';frame.allowFullscreen=true;frame.loading='lazy';
+        panel.replaceChildren(frame,link);
+      });
+      panel.append(preview,title,info,play,link);stage.appendChild(panel);
+    } else {
+      const image=document.createElement('img');image.src=item.src;image.alt=item.alt;
+      if(item.credit) {image.classList.add('is-real-photo');image.referrerPolicy='no-referrer';}
+      applyFallback(image,item.fallback);stage.appendChild(image);
+    }
+    $('mediaBadge').textContent=item.badge || (item.type==='video'?'Video':'Ảnh');
+    $('mediaIndex').textContent=String(index+1).padStart(2,'0')+' / '+String(media.length).padStart(2,'0');
+    $('mediaCaption').textContent=item.caption;
+    $('mediaCredit').replaceChildren();
+    if(item.credit){
+      const link=document.createElement('a');link.href=item.credit.source;link.target='_blank';link.rel='noopener noreferrer';
+      link.textContent='Nguồn: '+item.credit.author+' · '+item.credit.license+' ↗';$('mediaCredit').appendChild(link);
+    }
+    $('zoomButton').hidden=item.type!=='image';
+    $('mediaThumbnails').querySelectorAll('button').forEach((button,i)=>{
+      const active=i===index;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));
+      if(active && options.scroll !== false)button.scrollIntoView({block:'nearest',inline:'nearest',behavior:'smooth'});
+    });
+  }
+  function shift(n){show(index+n);}
+  function fillProductDetails(){
+    $('breadcrumbName').textContent=product.name;
+    $('productTitle').textContent=product.name;
+    $('productCategory').textContent=product.categoryName.toUpperCase();
+    $('productIntro').textContent=product.desc;
+    $('productDetailsText').textContent=product.desc;
+    $('productSku').textContent=product.id;
+    $('materialValue').textContent=product.material;
+    document.title=product.name+' | Đồ Đồng Tiểu Phong';
+    const related=products.filter(item => item.id!==product.id).sort((a,b)=>Number(b.category===product.category)-Number(a.category===product.category)).slice(0,4);
+    const host=$('relatedProducts');host.replaceChildren();
+    related.forEach(item=>{
+      const card=document.createElement('article');card.className='related-card';
+      const a=document.createElement('a');a.href='san-pham.html?id='+encodeURIComponent(item.id);
+      const img=document.createElement('img');const photo=getImage(item);img.src=photo.src;img.alt='Ảnh tham khảo: '+item.name;img.loading='eager';
+      if(photo.credit) img.classList.add('is-real-photo');applyFallback(img,item.image);
+      a.appendChild(img);
+      const category=document.createElement('span');category.textContent=item.categoryName;
+      const title=document.createElement('strong');title.textContent=item.name;
+      a.append(category,title);card.appendChild(a);host.appendChild(card);
+    });
+  }
+  function setFavoriteButton(){
+    favorite=loadStorage(favStorage).includes(product.id);
+    $('favoriteButton').textContent=favorite?'♥':'♡';
+    $('favoriteButton').setAttribute('aria-pressed',String(favorite));
+    $('favoriteButton').setAttribute('aria-label',favorite?'Bỏ lưu yêu thích':'Lưu mẫu vào yêu thích');
+  }
+  function toggleFavorite(){
+    const old=loadStorage(favStorage);const next=favorite?old.filter(id=>id!==product.id):[...new Set([...old,product.id])];
+    saveStorage(favStorage,next);setFavoriteButton();
+  }
+  function showNotice(message){const notice=$('requestNotice');notice.textContent=message;notice.hidden=false;}
+  function qtyValue(){const input=$('giftQuantity');const raw=Number(input.value);const qty=Number.isFinite(raw)?Math.min(999,Math.max(1,Math.floor(raw))):1;input.value=String(qty);return qty;}
+  function quoteText(){
+    const option=id=>$(id).value.trim() || 'Cần tư vấn';
+    return [
+      'YÊU CẦU BÁO GIÁ QUÀ TẶNG – ĐỒ ĐỒNG TIỂU PHONG',
+      'Mẫu quan tâm: '+product.name,
+      'Mã mẫu: '+product.id,
+      'Kích thước: '+option('sizeOption'),
+      'Chất liệu / màu: '+option('finishOption'),
+      'Đế / hộp: '+option('packagingOption'),
+      'Số lượng: '+qtyValue(),
+      'Nội dung khắc / lời chúc: '+($('engravingOption').value.trim()||'Không yêu cầu'),
+      '',
+      'Vui lòng kiểm tra khả năng làm theo mẫu và báo giá, thời gian giao hàng.'
+    ].join('\n');
+  }
+  async function copyToClipboard(message){
+    try {if(navigator.clipboard && window.isSecureContext){await navigator.clipboard.writeText(message);return true;}}catch(_){}
+    const textarea=document.createElement('textarea');textarea.value=message;textarea.style.position='fixed';textarea.style.opacity='0';
+    document.body.appendChild(textarea);textarea.select();
+    try {const ok=document.execCommand('copy');textarea.remove();return ok;}catch(_){textarea.remove();return false;}
+  }
+  async function requestQuote(event){
+    event.preventDefault();
+    qtyValue();
+    if(!$('giftOptions').reportValidity())return;
+    const message=quoteText();const ok=await copyToClipboard(message);
+    if(ok)showNotice('Đã sao chép yêu cầu. Hãy dán vào Zalo hoặc tin nhắn để gửi cho cửa hàng. Yêu cầu chưa được gửi tự động.');
+    else {showNotice('Trình duyệt không cho sao chép tự động. Hãy sao chép thủ công từ cửa sổ hiện ra.');window.prompt('Sao chép nội dung này:',message);}
+  }
+  function saveToQuote(){
+    const list=loadStorage(quoteStorage);
+    if(!list.includes(product.id)){list.push(product.id);saveStorage(quoteStorage,list.slice(-50));showNotice('Đã lưu mã mẫu trong danh sách quan tâm trên thiết bị. Tùy chọn khắc chữ chưa được lưu, bạn có thể tạo yêu cầu báo giá ngay tại đây.');}
+    else showNotice('Mẫu này đã có trong danh sách quan tâm.');
+  }
+  function zoomImage(item){const img=$('zoomImage');img.src=item.src;img.alt=item.alt;applyFallback(img,item.fallback);$('zoomCaption').textContent=item.caption;}
+  function openZoom(){
+    if(media[index].type!=='image')return;
+    zoomImage(media[index]);
+    const dlg=$('zoomDialog');if(typeof dlg.showModal==='function')dlg.showModal();
+  }
+  function zoomShift(delta){
+    if(!media.length)return;
+    for(let step=0;step<media.length;step++){
+      shift(delta);if(media[index].type==='image'){zoomImage(media[index]);return;}
+    }
+  }
+  function addLocalFiles(event){
+    const files=Array.from(event.target.files||[]);
+    let accepted=0, skipped=0;
+    for(const file of files){
+      if(accepted>=8 || file.size>35*1024*1024 || !/^(image\/(jpeg|png|webp|avif)|video\/(mp4|webm))$/.test(file.type)) {skipped++;continue;}
+      const url=URL.createObjectURL(file);objectUrls.push(url);
+      const video=file.type.startsWith('video/');
+      addMedia({type:video?'video':'image',src:url,poster:video?product.image:undefined,fallback:undefined,alt:'File xem thử: '+file.name,caption:'Ảnh/video tạm từ máy của bạn: '+file.name+' · Không tải lên máy chủ',badge:video?'Video trên máy':'Ảnh trên máy'});
+      accepted++;
+    }
+    if(accepted){renderThumbs();show(media.length-accepted);}
+    showNotice(accepted ? `Đã thêm ${accepted} file để xem thử (chỉ trên trình duyệt). ${skipped?skipped+' file không hỗ trợ / quá 35MB được bỏ qua.':''}` : 'Chưa thêm file. Chỉ hỗ trợ JPG/PNG/WebP/AVIF, MP4/WebM tối đa 35MB mỗi file.');
+    event.target.value='';
+  }
+  function wire(){
+    $('mediaPrevious').addEventListener('click',()=>shift(-1));
+    $('mediaNext').addEventListener('click',()=>shift(1));
+    $('zoomButton').addEventListener('click',openZoom);
+    $('favoriteButton').addEventListener('click',toggleFavorite);
+    $('zoomClose').addEventListener('click',()=>$('zoomDialog').close());
+    $('zoomPrev').addEventListener('click',()=>zoomShift(-1));
+    $('zoomNext').addEventListener('click',()=>zoomShift(1));
+    $('zoomDialog').addEventListener('click',event=>{if(event.target===$('zoomDialog'))$('zoomDialog').close();});
+    document.addEventListener('keydown',event=>{
+      if(event.target.matches('input,textarea,select') || event.altKey || event.ctrlKey || event.metaKey)return;
+      if(!$('zoomDialog').open){if(event.key==='ArrowLeft'){event.preventDefault();shift(-1);}if(event.key==='ArrowRight'){event.preventDefault();shift(1);}}
+      else {if(event.key==='ArrowLeft'){event.preventDefault();zoomShift(-1);}if(event.key==='ArrowRight'){event.preventDefault();zoomShift(1);}}
+    });
+    $('mediaViewer').addEventListener('touchstart',event=>{
+      if(event.target.closest('video'))return;const t=event.touches[0];touchStart={x:t.clientX,y:t.clientY};
+    },{passive:true});
+    $('mediaViewer').addEventListener('touchend',event=>{
+      if(!touchStart || event.target.closest('video')){touchStart=null;return;}
+      const t=event.changedTouches[0],dx=t.clientX-touchStart.x,dy=t.clientY-touchStart.y;touchStart=null;
+      if(Math.abs(dx)>48 && Math.abs(dx)>Math.abs(dy)*1.45)shift(dx<0?1:-1);
+    },{passive:true});
+    $('localMediaFiles').addEventListener('change',addLocalFiles);
+    $('giftOptions').addEventListener('submit',requestQuote);
+    $('addFavoriteQuote').addEventListener('click',saveToQuote);
+    $('quantityDecrease').addEventListener('click',()=>{$('giftQuantity').value=Math.max(1,qtyValue()-1);});
+    $('quantityIncrease').addEventListener('click',()=>{$('giftQuantity').value=Math.min(999,qtyValue()+1);});
+    $('giftQuantity').addEventListener('change',qtyValue);
+    $('mobileQuoteShortcut').addEventListener('click',()=>{
+      $('giftOptions').scrollIntoView({behavior:'smooth',block:'start'});
+      if(!$('sizeOption').value)$('sizeOption').focus({preventScroll:true});
+    });
+    window.addEventListener('beforeunload',()=>{objectUrls.forEach(url=>URL.revokeObjectURL(url));});
+  }
+  fillProductDetails();setUpMedia();renderThumbs();show(0,{scroll:false});setFavoriteButton();wire();
+})();
+
+});
+
+</script>
+</head>
+<body>
+  <a class="skip-link" href="#productTitle">Bỏ qua menu</a>
+  <div class="preview-notice"><span class="preview-dot"></span> Bản xem thử V0.5 · Ảnh tham khảo và video ngoài để thử thư viện ảnh & video, chưa phải sản phẩm bán thật</div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Về trang chủ Đồ Đồng Tiểu Phong"><span class="brand-symbol">TP<span class="brand-symbol-dot"></span></span><span class="brand-lines"><strong>ĐỒ ĐỒNG TIỂU PHONG</strong><small>QUÀ TẶNG ĐỒNG & MỸ NGHỆ</small></span></a>
+      <nav class="detail-nav" aria-label="Điều hướng"><a href="index.html#san-pham">Quà tặng</a><a href="index.html#bo-suu-tap">Danh mục</a><a href="index.html#lien-he">Liên hệ</a></nav>
+      <a class="detail-back" href="index.html#san-pham">← <span>Quay lại cửa hàng</span></a>
+    </div>
+  </header>
+  <main>
+    <div class="wrap detail-breadcrumb"><a href="index.html">Trang chủ</a><span>›</span><a href="index.html#san-pham">Quà tặng bằng đồng</a><span>›</span><span id="breadcrumbName">Đang tải mẫu...</span></div>
+    <section class="product-layout wrap" aria-label="Chi tiết sản phẩm mẫu">
+      <div class="media-column">
+        <div class="media-shell">
+          <div class="media-thumbnails" id="mediaThumbnails" aria-label="Chọn ảnh hoặc video" role="group"></div>
+          <div class="media-viewer" id="mediaViewer" tabindex="0" aria-label="Thư viện ảnh và video. Sử dụng phím mũi tên để chuyển">
+            <div class="media-stage" id="mediaStage"></div>
+            <div class="media-topline"><span id="mediaBadge">Ảnh tư liệu / minh họa</span><span id="mediaIndex">01 / 04</span></div>
+            <button type="button" id="favoriteButton" class="media-favorite" aria-label="Lưu mẫu vào yêu thích" title="Lưu yêu thích" aria-pressed="false">♡</button>
+            <button type="button" id="mediaPrevious" class="media-arrow left-arrow" aria-label="Ảnh trước">‹</button>
+            <button type="button" id="mediaNext" class="media-arrow right-arrow" aria-label="Ảnh tiếp theo">›</button>
+            <button type="button" id="zoomButton" class="media-zoom">⛶ <span>Phóng to ảnh</span></button>
+          </div>
+        </div>
+        <div class="media-description"><p id="mediaCaption" aria-live="polite">Chọn ảnh bên cạnh để xem.</p><p id="mediaCredit"></p></div>
+        <div class="try-media">
+          <div><strong>Thử ảnh hoặc video của bạn</strong><p>Chọn file JPG/PNG/WebP hoặc MP4/WebM để xem trong cùng thư viện. Chỉ hiển thị trên thiết bị này, không tải lên server và không lưu sau khi đóng trang.</p></div>
+          <label class="try-media-button" for="localMediaFiles">+ Thêm ảnh/video mẫu</label>
+          <input type="file" id="localMediaFiles" accept="image/jpeg,image/png,image/webp,image/avif,video/mp4,video/webm" multiple hidden />
+        </div>
+        <div class="media-instructions"><span>← → để chuyển ảnh</span><span>Chạm ảnh để phóng lớn</span><span>Video mạng phát khi bấm Play</span></div>
+      </div>
+      <aside class="purchase-column" aria-label="Tùy chọn quà tặng">
+        <div class="category-pill" id="productCategory">QUÀ LƯU NIỆM</div>
+        <h1 id="productTitle">Trống đồng mini để bàn</h1>
+        <p class="detail-intro" id="productIntro">Xem mẫu và tùy chọn trước khi nhận báo giá.</p>
+        <div class="status-line"><span class="status-dot"></span> Quà tặng cần xác nhận mẫu, giá và thời gian thực hiện</div>
+        <div class="price-panel"><div class="price-label">Giá dự kiến</div><strong>Liên hệ báo giá</strong><span>Chưa có giá nhập/bán xác nhận. Không hiển thị giảm giá giả hoặc lượt bán.</span></div>
+        <form id="giftOptions" class="product-options">
+          <div class="field-group"><label for="sizeOption">Kích thước</label><select id="sizeOption" required><option value="">Chọn kích thước cần tư vấn</option><option value="Loại nhỏ / để bàn">Loại nhỏ / để bàn</option><option value="Loại trung bình">Loại trung bình</option><option value="Kích thước theo yêu cầu">Kích thước theo yêu cầu</option></select></div>
+          <div class="field-group"><label for="finishOption">Chất liệu / màu hoàn thiện</label><select id="finishOption" required><option value="">Chọn tùy chọn tham khảo</option><option value="Đồng vàng">Đồng vàng</option><option value="Đồng đỏ">Đồng đỏ</option><option value="Màu giả cổ">Màu giả cổ</option><option value="Cần tư vấn">Cần tư vấn</option></select></div>
+          <div class="field-group"><label for="packagingOption">Đế, hộp hoặc đóng gói</label><select id="packagingOption" required><option value="">Chọn cách trình bày</option><option value="Đế gỗ">Đế gỗ</option><option value="Hộp quà">Hộp quà</option><option value="Đế gỗ và hộp quà">Đế gỗ và hộp quà</option><option value="Chưa quyết định">Chưa quyết định</option></select></div>
+          <div class="field-group"><label for="engravingOption">Khắc chữ / lời chúc (không bắt buộc)</label><textarea id="engravingOption" rows="3" maxlength="300" placeholder="Ví dụ: Kỷ niệm 20 năm thành lập, tên người nhận... (cần xác nhận có khắc được trên mẫu)"></textarea><small>Chỉ là yêu cầu gửi tư vấn, chưa bảo đảm xưởng nhận khắc.</small></div>
+          <div class="field-group"><label for="giftQuantity">Số lượng</label><div class="quantity-stepper"><button type="button" id="quantityDecrease" aria-label="Giảm số lượng">−</button><input type="number" id="giftQuantity" min="1" max="999" value="1" inputmode="numeric" /><button type="button" id="quantityIncrease" aria-label="Tăng số lượng">+</button></div></div>
+          <div class="action-stack"><button class="btn btn-dark quote-cta" type="submit">Tạo yêu cầu báo giá <span>↗</span></button><button class="btn btn-outline quote-cta" id="addFavoriteQuote" type="button">+ Lưu mẫu quan tâm</button></div>
+          <div id="requestNotice" class="request-notice" role="status" aria-live="polite" hidden></div>
+        </form>
+        <p class="form-footnote">Nội dung được sao chép để bạn chủ động gửi qua Zalo/tin nhắn. Website demo <strong>chưa gửi yêu cầu đến cửa hàng</strong>.</p>
+        <div class="product-accordion"><details open><summary>Thông tin sản phẩm mẫu</summary><p id="productDetailsText"></p><p><strong>Mã:</strong> <span id="productSku">GT001</span> · <strong>Chất liệu:</strong> <span id="materialValue"></span></p></details><details><summary>Cách chọn quà và đóng gói</summary><p>Đối chiếu kích thước thực tế, cách trưng bày, nội dung khắc, thời gian sản xuất và chi phí giao nhận trước khi chốt đơn.</p></details><details><summary>Ảnh & video mẫu có phải hàng đang bán?</summary><p>Không. Ảnh Wikimedia là tư liệu công khai; hình SVG là minh họa; video bên ngoài mở trên YouTube khi bấm phát. Ảnh, video, đánh giá, giá bán thật sẽ bổ sung sau.</p></details></div>
+      </aside>
+    </section>
+    <section class="wrap detail-related"><div class="section-heading"><div><span class="overline overline-muted">CÙNG KHÁM PHÁ</span><h2>Quà tặng <span>khác.</span></h2></div><a class="text-link" href="index.html#san-pham">Xem tất cả →</a></div><div class="related-grid" id="relatedProducts"></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-main"><div><a class="footer-logo" href="index.html">ĐỒ ĐỒNG TIỂU PHONG <span>↗</span></a><p>Quà doanh nghiệp · Mừng thọ · Tân gia · Quà lưu niệm</p></div><nav aria-label="Liên kết cuối trang"><a href="index.html">Trang chủ</a><a href="index.html#san-pham">Sản phẩm</a><a href="index.html#lien-he">Liên hệ</a></nav></div><div class="wrap footer-bottom"><span>Giao diện thử nghiệm V0.5</span><span>Không kết nối với Check Deck</span></div></footer>
+  <dialog id="zoomDialog" class="zoom-dialog" aria-label="Xem ảnh phóng lớn"><button type="button" id="zoomClose" class="zoom-close" aria-label="Đóng hình phóng to">×</button><img id="zoomImage" alt=""/><div class="zoom-bottom"><button type="button" id="zoomPrev" aria-label="Ảnh trước">‹</button><span id="zoomCaption">Ảnh sản phẩm</span><button type="button" id="zoomNext" aria-label="Ảnh tiếp theo">›</button></div></dialog>
+  <div class="detail-mobile-actions"><button type="button" id="mobileQuoteShortcut">Tạo yêu cầu báo giá ↗</button></div>
+</body>
+</html>
